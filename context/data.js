@@ -83,7 +83,7 @@ export function DataProvider(props){
     //footer 는 공통적으로 들어가니까 footer fetched: false 면 fetch
     if(!data.footer.fetched){
       const footerDoc = await db.collection("development").doc("footer").get()
-      if(doc.exists){
+      if(footerDoc.exists){
         setData(prevData => ({
           ...prevData,
           footer: {
