@@ -272,7 +272,7 @@ const NavbarStyle2 = () => {
                   </li> */}
 
                   <li className="nav-item">
-                    <Link href="https://www.naver.com" activeClassName="active">
+                    <Link href="https://gw.dwgroup.kr" activeClassName="active">
                       <a className="nav-link" target="_blank">인트라넷</a>
                     </Link>
                   </li>

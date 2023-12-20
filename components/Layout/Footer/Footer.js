@@ -112,7 +112,7 @@ const Footer = () => {
 
                 <ul className="quick-links">
                   <li>
-                    <Link href="/">
+                    <Link href="https://gw.dwgroup.kr">
                       <a target="_blank">인트라넷</a>
                     </Link>
                   </li>
@@ -152,7 +152,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <i className="ri-phone-fill"></i>
-                    <a href={`tel:${data.footer.footer_contactPhone}`}>{data.main.footer_contactPhone}</a>
+                    <a href={`tel:${data.footer.footer_contactPhone}`}>{data.footer.footer_contactPhone}</a>
                     <EditButton type="footer" item="footer_contactPhone" text="전화번호" />
                   </li>
                   <li>
