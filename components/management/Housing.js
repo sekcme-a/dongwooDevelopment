@@ -14,10 +14,11 @@ import SpeedIcon from '@mui/icons-material/Speed';
 
 import EditButton from "components/admin/EditButton"
 import useData from "context/data"
+import { useMonitorSize } from "components/hooks/useMonitorSize"
 
 
 const Housing = () => {
-
+  const {monitorWidth} = useMonitorSize()
   const {data, fetch_data} = useData()
 
   const [fetchedData, setFetchedData] = useState({
@@ -32,7 +33,7 @@ const Housing = () => {
     service: `친절응대, 고객의 입장에서의 공감과 이해, 정중한 자세와 일 처리, 고객과의 약속 이행, 사후 점검.`,
     speed: `재빠른 행동, 신속한 처리, 일의 표준화, 고객의 일부터 처리하는 신속함.`
   })
-  const [monitorSize, setMonitorSize] = useState(1500);
+
   const ani1 = useAnimation()
   const [inViewRef, inView] = useInView({ threshold: .2})
   const ani2 = useAnimation()
@@ -42,7 +43,7 @@ const Housing = () => {
   const ani4 = useAnimation()
   const [inViewRef4, inView4] = useInView({threshold: .2})
   const ani5 = useAnimation()
-  const [inViewRef5, inView5] = useInView(monitorSize>900 ? {threshold: 0.2}: {threshold: 0.1})
+  const [inViewRef5, inView5] = useInView(monitorWidth>900 ? {threshold: 0.2}: {threshold: 0.1})
   const ani6 = useAnimation()
   const [inViewRef6, inView6] = useInView({threshold: .2})
   const ani7_1 = useAnimation();  const ani7_2 = useAnimation();  const ani7_3 = useAnimation(); 
@@ -58,20 +59,6 @@ const Housing = () => {
   if (inView5) {ani7_1.start({...start(1,0.4)});ani7_2.start({...start(1,0.6)});ani7_3.start({...start(1,0.8)})}
   if (inView8) {ani8.start({...start(1,0)})}
 
-//***모니터 크기 측정 */
-
-useEffect(() => {
-    const handleResize = () => {
-    setMonitorSize(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-    window.removeEventListener('resize', handleResize);
-    };
-}, []);
-//**모니터 크기 측정 끝 */
 
 
 

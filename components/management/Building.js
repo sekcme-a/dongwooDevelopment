@@ -8,10 +8,11 @@ import { useInView } from "react-intersection-observer"
 import useData from "context/data"
 
 import EditButton from "components/admin/EditButton"
+import { useMonitorSize } from "components/hooks/useMonitorSize"
 
 const SEQUENTIALDELAY = 0.2
 const Building = () => {
-  const [monitorSize, setMonitorSize] = useState(0);
+  const {monitorWidth} = useMonitorSize()
   const {data, fetch_data} = useData()
   const [fetchedData, setFetchedData] = useState({
     text1:`(주)동우개발은 공동주택관리 분야를 선도하고 있습니다.
@@ -45,7 +46,7 @@ const Building = () => {
   const ani4 = useAnimation()
   const ani5 = useAnimation()
   const ani6 = useAnimation()
-  const [inViewRef, inView] = useInView(monitorSize>900 ? { threshold:0.7} : {threshold: 0.1})
+  const [inViewRef, inView] = useInView(monitorWidth>900 ? { threshold:0.7} : {threshold: 0.1})
   const noneRef = useRef()
 
 
@@ -64,21 +65,6 @@ const Building = () => {
     if(index===4) return {animate: ani5}
     if(index===5) return {animate: ani6}
   }
-
-  //***모니터 크기 측정 */
-  
-  useEffect(() => {
-      const handleResize = () => {
-      setMonitorSize(window.innerWidth);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-      window.removeEventListener('resize', handleResize);
-      };
-  }, []);
-  //**모니터 크기 측정 끝 */
 
   return(
     <div className={styles.main_container}>

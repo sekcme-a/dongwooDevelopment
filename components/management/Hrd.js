@@ -14,9 +14,10 @@ import MapsHomeWorkOutlinedIcon from '@mui/icons-material/MapsHomeWorkOutlined';
 
 import useData from "context/data"
 import EditButton from "components/admin/EditButton"
+import { useMonitorSize } from "components/hooks/useMonitorSize"
 
 const Hrd = () => {
-  const [monitorSize, setMonitorSize] = useState(1000);
+  const {monitorWidth} = useMonitorSize()
   const {data, fetch_data} = useData()
   const [fetchedData, setFetchedData] = useState({
     text1:`(주)동우개발은 공동주택관리 업계를 선도하고 있습니다.
@@ -55,7 +56,7 @@ const Hrd = () => {
 
   const [inViewRef, inView] = useInView({ threshold: .3})
   const [inViewRef2, inView2] = useInView({threshold: 1})
-  const [inViewRef3, inView3] = useInView(monitorSize>900 ? {threshold: 1} : {threshold: 0.1})
+  const [inViewRef3, inView3] = useInView(monitorWidth>900 ? {threshold: 1} : {threshold: 0.1})
   
 
 
@@ -63,21 +64,6 @@ const Hrd = () => {
   if(inView2) {ani2_1.start({...start(1,0)}); ani2_2.start({...start(1,0.5)})}
   if(inView3) {ani3_1.start({...start(0.5,0)}); ani3_2.start({...start(0.5,0.1)});ani3_3.start({...start(0.5,0.2)})}
 
-  //***모니터 크기 측정 */
-
-  
-  useEffect(() => {
-      const handleResize = () => {
-      setMonitorSize(window.innerWidth);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-      window.removeEventListener('resize', handleResize);
-      };
-  }, []);
-  //**모니터 크기 측정 끝 */
 
   return(
     <div className={styles.main_container}>

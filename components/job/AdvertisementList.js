@@ -5,10 +5,11 @@ import { useRouter } from "next/router";
 import Typography from '@mui/material/Typography';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import { useMonitorSize } from "components/hooks/useMonitorSize";
 
 
 const ArticleList = ({list, countPerPage}) => {
-  const [monitorSize, setMonitorSize] = useState(1000);
+  const {monitorWidth} = useMonitorSize()
   const [page, setPage] = useState(1);
   const [count, setCount] = useState(1)
   const handleChange = (event, value) => {
@@ -41,26 +42,11 @@ const ArticleList = ({list, countPerPage}) => {
     } else return "-"
   }
 
-  //***모니터 크기 측정 */
-  
-  useEffect(() => {
-      const handleResize = () => {
-      setMonitorSize(window.innerWidth);
-      };  
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-      window.removeEventListener('resize', handleResize);
-      };
-  }, []);
-  //**모니터 크기 측정 끝 */
-
   const handleItemclick = (id) => {
     router.push(`/post/advertisement/${id}`)
   }
 
-  if(monitorSize>600)
+  if(monitorWidth>600)
   return(
     <div className={styles.main_container}>
       <div className={styles.header}>

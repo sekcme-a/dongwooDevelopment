@@ -16,13 +16,13 @@ import EditButton from "components/admin/EditButton"
 import useData from "context/data"
 
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
+import { useMonitorSize } from "components/hooks/useMonitorSize"
 
 
 const Security = () => {
 
   const {data,} = useData()
-
-  const [monitorSize, setMonitorSize] = useState(1500);
+  const {monitorWidth} = useMonitorSize()
   const ani1 = useAnimation()
   const [inViewRef, inView] = useInView({ threshold: .2})
   const ani2 = useAnimation()
@@ -33,7 +33,7 @@ const Security = () => {
   const ani4 = useAnimation()
   const [inViewRef4, inView4] = useInView({threshold: .2})
   const ani5 = useAnimation()
-  const [inViewRef5, inView5] = useInView(monitorSize>900 ? {threshold: 0.2}: {threshold: 0.1})
+  const [inViewRef5, inView5] = useInView(monitorWidth>900 ? {threshold: 0.2}: {threshold: 0.1})
   const ani6 = useAnimation()
   const [inViewRef6, inView6] = useInView({threshold: .2})
   const ani7_1 = useAnimation();  const ani7_2 = useAnimation();  const ani7_3 = useAnimation(); 
@@ -48,21 +48,6 @@ const Security = () => {
   if (inView5) {ani6.start({...start(1,0.2)})}
   if (inView5) {ani7_1.start({...start(1,0.4)});ani7_2.start({...start(1,0.6)});ani7_3.start({...start(1,0.8)})}
   if (inView8) {ani8.start({...start(1,0)})}
-
-//***모니터 크기 측정 */
-
-useEffect(() => {
-    const handleResize = () => {
-    setMonitorSize(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-    window.removeEventListener('resize', handleResize);
-    };
-}, []);
-//**모니터 크기 측정 끝 */
 
 
 
