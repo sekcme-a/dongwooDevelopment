@@ -128,15 +128,15 @@ const Footer = () => {
                         <EditButton type="footer" item="footer_contactAddress" text="위치" />
                   </li>
                   <li style={{position:"relative"}}><span>이메일:</span> 
-                      <a href={`mailto:${data.footer.email}`}>{data.footer.footer_contactEmail}</a>
+                      <a href={`mailto:${data.footer.footer_contactEmail}`}>{data.footer.footer_contactEmail}</a>
                       <EditButton type="footer" item="footer_contactEmail" text="이메일" /> 
                   </li>
                   <li style={{position:"relative"}}><span>전화번호:</span> 
-                      <a href={`tel:${data.footer.phone}`}>{data.footer.footer_contactPhone}</a>
+                      <a href={`tel:${data.footer.footer_contactPhone}`}>{data.footer.footer_contactPhone}</a>
                       <EditButton type="footer" item="footer_contactPhone" text="전화번호" />
                   </li>
                   <li style={{position:"relative"}}><span>FAX:</span> 
-                  <a href={`tel:${data.footer.fax}`}>{data.footer.footer_fax}</a>
+                  <a href={`tel:${data.footer.footer_fax}`}>{data.footer.footer_fax}</a>
                   <EditButton type="footer" item="footer_fax" text="FAX" />
                   </li>
                    {/* <li><a href="/info/map">찾아오는 길</a></li> */}
