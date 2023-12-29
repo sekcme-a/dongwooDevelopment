@@ -3,6 +3,8 @@ import Link from "next/link";
 import useData from "context/data";
 import EditButton from "components/admin/EditButton";
 
+import styles from "./Footer.module.css"
+
 const PR = {position: "relative"}
 
 const Footer = () => {
@@ -13,7 +15,7 @@ const Footer = () => {
       <footer className="footer-area pt-100">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="widget-logo" style={PR}>
                   <EditButton mode="image"
@@ -22,7 +24,7 @@ const Footer = () => {
                   />
                   <Link href="/">
                     <a >
-                      <img src={data.footer.footer_logoUrl} alt="로고" style={{width:"200px", backgroundColor:"white"}}/>
+                      <img src={data.footer.footer_logoUrl} alt="로고" style={{width:"140px", backgroundColor:"white"}}/>
 
                     </a>
                   </Link>
@@ -31,82 +33,59 @@ const Footer = () => {
                   {data.footer.footer_text}
                   <EditButton type="footer" item="footer_text" text="내용" />
                 </p>
-                {/* <ul className="widget-social">
-                  <li>
-                    <a
-                      href="https://www.facebook.com/EnvyTheme"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="ri-facebook-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/?lang=en"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="ri-twitter-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="ri-instagram-line"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/signup"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="ri-linkedin-line"></i>
-                    </a>
-                  </li>
-                </ul> */}
               </div>
             </div>
 
-            <div className="col-lg-3 col-sm-6">
-              <div className="single-footer-widget ps-5">
-                <h3>페이지 이동</h3>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-footer-widget">
+                  <h3>바로가기</h3>
 
-                <ul className="quick-links">
-                  <li>
-                    <Link href="/info/greet">
-                      <a>인사말</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/info/overview">
-                      <a>회사 개요</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/info/business">
-                      <a>경영방침</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/info/partner">
-                      <a>협력사</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/info/history">
-                      <a>연혁</a>
-                    </Link>
-                  </li>
-                </ul>
+                  <ul className={`footer-quick-links ${styles.list_container}`} >
+                      <li>
+                          <Link href="/">
+                              <a>Home</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/info/greet">
+                              <a>인사말</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/info/overview">
+                              <a>회사 개요</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/info/business">
+                              <a>경영방침</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/info/history">
+                              <a>연혁</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/management/housing">
+                              <a>공동주택관리</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/management/building">
+                              <a>빌딩종합관리</a>
+                          </Link>
+                      </li>
+                      <li>
+                          <Link href="/major/1">
+                              <a>토탈관리서비스</a>
+                          </Link>
+                      </li>
+                  </ul>
               </div>
             </div>
 
-            <div className="col-lg-3 col-sm-6">
+            {/* <div className="col-lg-3 col-sm-6">
               <div className="single-footer-widget ps-5">
                 <h3>계열사</h3>
 
@@ -138,29 +117,30 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-lg-3 col-sm-6">
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-footer-widget ps-3">
-                <h3>Contact</h3>
-
-                <ul className="footer-information">
-                  <li>
-                    <i className="ri-map-pin-line"></i>
-                    {data.footer.footer_contactAddress}
-                    <EditButton type="footer" item="footer_contactAddress" text="주소지" />
+                <h3>Contact Info</h3>
+                <ul className="footer-contact-info">
+                  <li style={{position:"relative"}}><span>위치:</span> 
+                        {data.footer.footer_contactAddress}
+                        <EditButton type="footer" item="footer_contactAddress" text="위치" />
                   </li>
-                  <li>
-                    <i className="ri-phone-fill"></i>
-                    <a href={`tel:${data.footer.footer_contactPhone}`}>{data.footer.footer_contactPhone}</a>
-                    <EditButton type="footer" item="footer_contactPhone" text="전화번호" />
+                  <li style={{position:"relative"}}><span>이메일:</span> 
+                      <a href={`mailto:${data.footer.email}`}>{data.footer.footer_contactEmail}</a>
+                      <EditButton type="footer" item="footer_contactEmail" text="이메일" /> 
                   </li>
-                  <li>
-                    <i className="ri-mail-line"></i>
-                    <a href="mailto:dongwoodh@hanmail.net">{data.footer.footer_contactEmail}</a>
-                    <EditButton type="footer" item="footer_contactEmail" text="이메일" /> 
+                  <li style={{position:"relative"}}><span>전화번호:</span> 
+                      <a href={`tel:${data.footer.phone}`}>{data.footer.footer_contactPhone}</a>
+                      <EditButton type="footer" item="footer_contactPhone" text="전화번호" />
                   </li>
-                </ul>
+                  <li style={{position:"relative"}}><span>FAX:</span> 
+                  <a href={`tel:${data.footer.fax}`}>{data.footer.footer_fax}</a>
+                  <EditButton type="footer" item="footer_fax" text="FAX" />
+                  </li>
+                   {/* <li><a href="/info/map">찾아오는 길</a></li> */}
+               </ul>
               </div>
             </div>
           </div>

@@ -1,0 +1,12 @@
+
+
+.list_container{
+
+}
+
+.list_container li{
+  list-style: none;
+}
+.list_container li a{
+  color: white;
+}

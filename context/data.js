@@ -37,7 +37,7 @@ export function DataProvider(props){
 
   const [thumbnailsList, setThumbnailsList] = useState({})
   const fetch_thumbnails_list = async (type) => {
-    const query = await db.collection("team").doc("development").collection("posts").where("condition", "==", "게제중").where("type","==",type).orderBy("publishedAt", "desc").get()
+    const query = await db.collection("team").doc("development").collection("posts").where("condition", "==", "게제중").where("type","==",type).orderBy("savedAt", "desc").get()
     const list = query.docs.map(doc=>({...doc.data(), id: doc.id}))
     setThumbnailsList(prevList => ({...prevList, [type]: list}))
   }
