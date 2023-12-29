@@ -15,6 +15,8 @@ import Cta from "components/Common/Cta";
 import Footer from "components/Layout/Footer/Footer";
 import useData from "context/data";
 
+import HeadMeta from "components/HeadMeta";
+
 export default function Index3() {
 
   const {data, fetch_data} = useData()
@@ -26,6 +28,14 @@ export default function Index3() {
 
   return (
     <>
+
+      <HeadMeta
+        title="동우개발"
+        description="공동주택관리 전문기업 동우개발입니다."
+        url="https://xn--h49at0mlnhpml.kr/"
+      />
+
+
       <Navbar />
 
       <MainBanner />

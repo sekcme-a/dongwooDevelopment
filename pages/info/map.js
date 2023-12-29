@@ -8,7 +8,7 @@ import Footer from "components/Layout/Footer/Footer";
 import HowToGo from "components/info/HowToGo";
 import KakaoMap from "components/info/KakaoMap";
 
-
+import HeadMeta from "components/HeadMeta";
 
 import useData from "context/data";
 const Map = () => {
@@ -43,6 +43,12 @@ const Map = () => {
 
   return(
     <>
+
+      <HeadMeta
+        title="동우개발-오시는 길"
+        description="동우개발로 오시는 길을 안내드립니다."
+        url="https://xn--h49at0mlnhpml.kr/info/map"
+      />
       <Navbar />
 
       <PageBanner title="오시는 길" subtitle="Location" homeText="회사소개" homeUrl="/info/greet" />

@@ -37,8 +37,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>동우개발 - 함께 동행하는 동우그룹</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta charSet="utf-8" />
+        <link rel="canonical" href="https://xn--h49at0mlnhpml.kr/"></link>
+        <meta name="robots" content="index,follow"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <UserDataProvider>
         <DataProvider>

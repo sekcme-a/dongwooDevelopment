@@ -11,6 +11,11 @@ import useData from "context/data";
 import { useEffect } from "react";
 
 
+import HeadMeta from "components/HeadMeta";
+
+
+
+
 const Security = () => {
 
 
@@ -24,6 +29,12 @@ const Security = () => {
 
   return(
     <>
+    <HeadMeta
+        title="동우개발-경비보안관리"
+        description="동우개발의 경비보안관리를 소개합니다."
+        url="https://xn--h49at0mlnhpml.kr/management/security"
+      />
+
       <Navbar />
 
       <PageBanner title="경비보안관리" subtitle="Security Management" homeText="관리분야" homeUrl="/management/housing" />

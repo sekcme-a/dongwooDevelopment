@@ -10,6 +10,8 @@ import AdvertisementCompo from "components/job/Advertisement"
 
 import useData from "context/data";
 
+import HeadMeta from "components/HeadMeta";
+
 const Advertisement = () => {
 
   const {thumbnailsList, fetch_thumbnails_list} = useData()
@@ -28,6 +30,14 @@ const Advertisement = () => {
 
   return(
     <>
+
+      <HeadMeta
+        title="동우개발-채용공고"
+        description="동우개발의 채용공고입니다."
+        url="https://xn--h49at0mlnhpml.kr/job/advertisement"
+      />
+
+
       <Navbar />
 
       <PageBanner title="채용공고" subtitle="Job Advertisement" homeText="채용공고" homeUrl="/job/advertisement" />

@@ -3,9 +3,19 @@ import Navbar from "components/Layout/Navbar";
 import PageBanner from "components/Common/PageBanner";
 import Footer from "components/Layout/Footer/Footer";
 
+import HeadMeta from "components/HeadMeta";
+
 export default function PrivacyPolicy() {
   return (
     <>
+
+      <HeadMeta
+        title="동우개발"
+        description="공동주택관리 전문기업 동우개발입니다."
+        url="https://xn--h49at0mlnhpml.kr/"
+      />
+
+
       <Navbar />
 
       <PageBanner title="개인정보 수집 및 이용" subtitle="Privacy Policy" homeText="개인정보 수집 및 이용" homeUrl="/privacy-policy" />

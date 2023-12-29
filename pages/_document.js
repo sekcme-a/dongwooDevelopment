@@ -9,9 +9,11 @@ import Script from "next/script";
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="zxx">
+      <Html lang="kr">
         <Head>
-            <meta name="naver-site-verification" content="dff4d9c1706e786ef9faec449c45bb43125b7cea" />
+          <meta charSet="UTF-8" />
+          <meta name="naver-site-verification" content="167417d35ff2be1de3767bc42046988d1e7c52a7" />
+          <meta name="google-site-verification" content="n354119AK7RYoyy59Xyvx8hOXBTtuYtF95kw69sVZbU" />
             <link
                 href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
                 rel="stylesheet"
