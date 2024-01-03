@@ -16,6 +16,7 @@ import Footer from "components/Layout/Footer/Footer";
 import useData from "context/data";
 
 import HeadMeta from "components/HeadMeta";
+import PopUp from "components/PopUp";
 
 export default function Index3() {
 
@@ -35,6 +36,7 @@ export default function Index3() {
         url="https://xn--h49at0mlnhpml.kr/"
       />
 
+      <PopUp />
 
       <Navbar />
 
