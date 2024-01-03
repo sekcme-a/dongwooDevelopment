@@ -31,7 +31,7 @@ export default function Index3() {
 
       <HeadMeta
         title="동우개발"
-        description="공동주택관리 전문기업 동우개발입니다."
+        description="(주)동우개발은 공동주택을 전문으로 하는 관리회사입니다. 고객 여러분의 안전하고 편안한 주거환경을 지원하기 위해 최선을 다하고 있습니다. "
         url="https://xn--h49at0mlnhpml.kr/"
       />
 
