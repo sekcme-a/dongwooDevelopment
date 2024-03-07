@@ -2,14 +2,6 @@
 import React from "react";
 import Navbar from "components/Layout/Navbar";
 import PageBanner from "components/Common/PageBanner";
-import AboutOurCompany from "components/About2/AboutOurCompany";
-import FunFactStyle1 from "components/Common/FunFactStyle1";
-import Pricing from "components/PricingPlan/Pricing";
-import TeamMemberStyle3 from "components/Common/TeamMemberStyle3";
-import WhyChooseUsStyle1 from "components/Common/WhyChooseUsStyle1";
-import TestimonialStyle1 from "components/Common/TestimonialStyle1";
-import OurExpertise from "components/About2/OurExpertise";
-import Faq from "components/Common/Faq";
 import Footer from "components/Layout/Footer/Footer";
 
 import OverviewCompo from "components/info/Overview"
