@@ -27,8 +27,8 @@ const Landscape = () => {
     <>
 
 <HeadMeta
-        title="동우개발-조경 · 미화 관리"
-        description="동우개발의 조경 · 미화 관리를 소개합니다."
+        title="조경·미화 관리 - 동우개발"
+        description="(주)동우개발은 아파트, 빌딩, 상가 등 정기적인 서비스를 제공해야 하는 청소/미화 서비스 제공을 위해 성실하고 꼼꼼한 우수인력과 전문장비를 함께 제공하고 있습니다."
         url="https://xn--h49at0mlnhpml.kr/management/landscape"
       />
 

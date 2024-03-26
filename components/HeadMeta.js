@@ -20,7 +20,7 @@ const HeadMeta = ({ title, description, url }) => {
       }/>
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url || "https://xn--h49at0mlnhpml.kr"} />
-      <meta property="og:image" content={"https://xn--h49at0mlnhpml.kr/images/logo.png" } />
+      <meta property="og:image" content={"https://xn--h49at0mlnhpml.kr/images/logo_text.png" } />
       <meta name="keywords" content="동우개발"/>
       <meta property="og:article:author" content="동우개발" />
     </Head>

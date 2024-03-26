@@ -110,22 +110,22 @@ const NavbarStyle2 = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/major/1" activeClassName="active">
+                        <Link href="/major/management" activeClassName="active">
                           <a className="nav-link">공동주택의 토탈 관리 서비스</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/major/2" activeClassName="active">
+                        <Link href="/major/facilities" activeClassName="active">
                           <a className="nav-link">오피스텔·상가·기타 업무용 건물의 시설</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/major/3" activeClassName="active">
+                        <Link href="/major/asset" activeClassName="active">
                           <a className="nav-link">자산관리 서비스</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/major/4" activeClassName="active">
+                        <Link href="/major/implementation" activeClassName="active">
                           <a className="nav-link">시행&시공사에 대한 관리부분 컨설팅 서비스</a>
                         </Link>
                       </li>

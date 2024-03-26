@@ -10,9 +10,9 @@ export default function PrivacyPolicy() {
     <>
 
       <HeadMeta
-        title="동우개발"
-        description="공동주택관리 전문기업 동우개발입니다."
-        url="https://xn--h49at0mlnhpml.kr/"
+        title="개인정보 수집및 이용 - 동우개발"
+        description="동우개발 개인정보 수집 및 이용."
+        url="https://xn--h49at0mlnhpml.kr/privacy-policy"
       />
 
 

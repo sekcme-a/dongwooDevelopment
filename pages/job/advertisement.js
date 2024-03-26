@@ -32,8 +32,8 @@ const Advertisement = () => {
     <>
 
       <HeadMeta
-        title="동우개발-채용공고"
-        description="동우개발의 채용공고입니다."
+        title="채용공고 - 동우개발"
+        description="동우개발의 채용공고입니다. (주)동우개발은 공동주택관리 분야를 선도하는 기업이 되겠습니다."
         url="https://xn--h49at0mlnhpml.kr/job/advertisement"
       />
 

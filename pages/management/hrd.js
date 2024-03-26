@@ -14,8 +14,8 @@ const Hrd = () => {
     <>
 
 <HeadMeta
-        title="동우개발-인사관리"
-        description="동우개발의 인사관리를 소개합니다."
+        title="인사관리 - 동우개발"
+        description="(주)동우개발은 분야별 전문이력의 총원과 체계적인 교육 및 관리를 실시합니다."
         url="https://xn--h49at0mlnhpml.kr/management/hrd"
       />
 

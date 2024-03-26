@@ -24,8 +24,8 @@ useEffect(()=>{
     <>
 
       <HeadMeta
-        title="동우개발-연혁"
-        description="동우개발의 연혁을 소개합니다."
+        title="연혁 - 동우개발"
+        description="동우개발의 법인 설립부터 현재까지의 연혁을 소개합니다."
         url="https://xn--h49at0mlnhpml.kr/info/history"
       />
 

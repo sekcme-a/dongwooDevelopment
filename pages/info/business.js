@@ -26,8 +26,8 @@ const Business = () => {
     <>
 
       <HeadMeta
-        title="동우개발-경영방침"
-        description="동우개발의 경영방침을 소개합니다."
+        title="경영방침 - 동우개발"
+        description="동우개발, 지속 가능한 혁신을 통한 동우개발의 성장과 발전. 동우개발의 경영방침을 소개합니다."
         url="https://xn--h49at0mlnhpml.kr/info/business"
       />
 

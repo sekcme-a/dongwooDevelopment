@@ -77,7 +77,7 @@ const Footer = () => {
                           </Link>
                       </li>
                       <li>
-                          <Link href="/major/1">
+                          <Link href="/major/management">
                               <a>토탈관리서비스</a>
                           </Link>
                       </li>

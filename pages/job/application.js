@@ -20,8 +20,8 @@ const Application = () => {
 
 
       <HeadMeta
-        title="동우개발-입사지원"
-        description="동우개발에 입사지원하실 수 있습니다."
+        title="입사지원 - 동우개발"
+        description="동우개발에 입사지원하실 수 있습니다. 동우개발은 밝은 비전을 제시하며 고객감동 서비스를 경영 이념으로 실천합니다."
         url="https://xn--h49at0mlnhpml.kr/job/application"
       />
 
