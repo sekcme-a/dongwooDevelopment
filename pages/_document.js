@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta name="author" content="동우개발,(주)동우개발,이육행,동우 개발,dongwoo,동우그룹" />
-          <meta name="naver-site-verification" content="167417d35ff2be1de3767bc42046988d1e7c52a7" />
+          <meta name="naver-site-verification" content="804074421e30fbbd2b49c9f0a6a8c27e03b69f70" />
           <meta name="google-site-verification" content="n354119AK7RYoyy59Xyvx8hOXBTtuYtF95kw69sVZbU" />
 
 
