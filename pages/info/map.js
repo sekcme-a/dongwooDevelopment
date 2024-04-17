@@ -46,7 +46,7 @@ const Map = () => {
 
       <HeadMeta
         title="오시는 길 - 동우개발"
-        description="동우개발은 서울특별시 도봉구 시루봉로 234, 동우빌딩 2층에 위치해 있습니다. 오시는 길을 안내드립니다."
+        description="동우개발은 서울특별시 도봉구 시루봉로 234, 동우빌딩 2층에 위치해 있습니다."
         url="https://xn--h49at0mlnhpml.kr/info/map"
       />
       <Navbar />

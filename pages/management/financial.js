@@ -15,7 +15,7 @@ const Financial = () => {
 
 <HeadMeta
         title="회계관리 - 동우개발"
-        description="아파트 운영예산 수립과 진행 과정을 투명하게 운영하기 위해 회계업무 경험이 풍부한 전문가를 통해 통합교육 및 사업장별 방문을 하여 회계업무를 지원합니다."
+        description="회계업무 경험이 풍부한 전문가를 통해 통합교육 및 사업장별 방문을 하여 회계업무를 지원합니다."
         url="https://xn--h49at0mlnhpml.kr/management/financial"
       />
 

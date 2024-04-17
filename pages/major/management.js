@@ -28,7 +28,7 @@ const One = () => {
     <>
     <HeadMeta
         title="공동주택의 토탈관리 서비스 - 동우개발"
-        description="공동주택 토탈 관리 서비스는 건물시설 및 인력관리, 회계, 경비보안, 조경, 미화, 위생 등 다양한 분야를 아우르며, 다년간 축적된 경험과 기술력을 토대로 서비스를 제공합니다."
+        description="건물시설 및 인력관리, 회계, 경비보안, 조경, 미화, 위생 등 다양한 분야를 아우릅니다."
         url="https://xn--h49at0mlnhpml.kr/major/management"
       />
 

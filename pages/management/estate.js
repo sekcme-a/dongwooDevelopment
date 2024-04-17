@@ -15,7 +15,7 @@ const Estate = () => {
 
 <HeadMeta
         title="부동산자산관리 - 동우개발"
-        description="고객의 부동산자산가치 극대화를 최우선 목표로 전문지식을 갖춘 부동산 전문가/관리 전문가가 함께 고객에게 최적화된 부동산 자산관리"
+        description="전문지식을 갖춘 부동산 전문가/관리 전문가가 함께 고객에게 최적화된 부동산 자산관리."
         url="https://xn--h49at0mlnhpml.kr/management/estate"
       />
 

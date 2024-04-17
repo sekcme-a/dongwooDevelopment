@@ -15,6 +15,7 @@ import SpeedIcon from '@mui/icons-material/Speed';
 import EditButton from "components/admin/EditButton"
 import useData from "context/data"
 import { useMonitorSize } from "components/hooks/useMonitorSize"
+import Image from "next/image"
 
 
 const Housing = () => {
@@ -78,12 +79,14 @@ useEffect(() => {
   return(
     <div className={styles.main_container}>
       <motion.h6 {...initial(0,0,30)} animate={{...start(1,0)}} style={{position:"relative"}}>{fetchedData.text1}<EditButton type="housing" item="text1" text="텍스트"  /></motion.h6>
-
-      <motion.img {...initial(0,0,30)} animate={ani2} ref={inViewRef2} src={fetchedData.imgUrl1} alt="이미지1" style={{position:"relative"}}/>
+      
+      <div style={{maxWidth:"100%", position:"relative", height:"300px"}}>
+        <Image src={fetchedData.imgUrl1} alt="이미지1" style={{position:"relative"}} layout="fill" objectFit="contain" objectPosition="center"/>
+      </div>
       <div style={{position:"relative"}}><EditButton type="housing" item="imgUrl1" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20210407/f36753181e009.png"/></div>
       
       <motion.h6 {...initial(0,0,30)} animate={ani3} ref={inViewRef3}style={{position:"relative", marginTop:"80px"}}>{fetchedData.text2}<EditButton type="housing" item="text2" text="텍스트"  /></motion.h6>
-      <motion.img {...initial(0,0,30)} animate={ani4} ref={inViewRef4} src={fetchedData.imgUrl2}  alt="이미지2"></motion.img>
+      <Image src={fetchedData.imgUrl2}  alt="이미지2" width={1000} height={1000} objectFit="contain" loading="lazy"/>
       <div style={{position:"relative"}}><EditButton type="housing" item="imgUrl2" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20210422/cd4ec2f5e5a20.png"/></div>
 
       <motion.h3 {...initial(0,0,30)} animate={ani5} ref={inViewRef5}>3S</motion.h3>

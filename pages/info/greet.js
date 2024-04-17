@@ -24,7 +24,7 @@ export default function Greet() {
     <>
       <HeadMeta
         title="인사말 - 동우개발"
-        description="안녕하십니까, 주식회사 동우개발 대표이사 안이재 입니다. 동우개발의 인사말입니다."
+        description="안녕하십니까, 주식회사 동우개발 대표이사 안이재 입니다."
         url="https://xn--h49at0mlnhpml.kr/info/greet"
       />
     

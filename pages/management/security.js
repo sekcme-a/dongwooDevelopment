@@ -31,7 +31,7 @@ const Security = () => {
     <>
     <HeadMeta
         title="경비보안관리 - 동우개발"
-        description="공동주택 종합관리는 건물시설관리, 인력관리, 회계관리, 경비보안, 조경, 미화, 위생관리 등 다양한 전문분야를 아우르는 복잡한 업무로서 축적된 경험과 기술력을 바탕으로 서비스를 지원하고 있습니다."
+        description="다양한 전문분야를 아우르는 복잡한 업무로서 축적된 경험과 기술력을 바탕으로 서비스를 지원하고 있습니다."
         url="https://xn--h49at0mlnhpml.kr/management/security"
       />
 
