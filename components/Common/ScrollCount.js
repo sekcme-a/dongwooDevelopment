@@ -19,8 +19,9 @@ const ScrollCount = () => {
         <div className="container">
           <div className="section-title">
             <span>관리 현황</span>
-            <h2 style={PR}>
-              {data.main.scrollCount_title}
+            <h2 style={{position:"relative", color:"black"}}>
+              {console.log(data.main)}
+              {data.main.scrollCount_title ?? "동우 개발의 관리 현황입니다."}
               <EditButton type="main" item="scrollCount_title" text="제목"/>
             </h2>
           </div>
@@ -34,7 +35,7 @@ const ScrollCount = () => {
                 <h3 {...animatedItem}/>
                 <EditButton type="main" item="scrollCount_count1" text="숫자입력"/>
                 <p style={PR}>
-                  {data.main.scrollCount_text1}
+                  {data.main.scrollCount_text1 ?? "관리 단지"}
                   <EditButton type="main" item="scrollCount_text1" text="문구입력"/>
                 </p>
               </div>
@@ -48,7 +49,7 @@ const ScrollCount = () => {
                 <h3 {...animatedItem2}/>
                 <EditButton type="main" item="scrollCount_count2" text="숫자입력"/>
                 <p style={PR}>
-                  {data.main.scrollCount_text2}
+                  {data.main.scrollCount_text2 ?? "관리 세대"}
                   <EditButton type="main" item="scrollCount_text2" text="문구입력"/>
                 </p>
               </div>
@@ -65,7 +66,7 @@ const ScrollCount = () => {
                   <h3 style={{fontSize: "23px"}}>m<sup>2</sup></h3>
                 </div>
                 <p style={PR}>
-                  {data.main.scrollCount_text3}
+                  {data.main.scrollCount_text3 ?? "관리 면적"}
                   <EditButton type="main" item="scrollCount_text3" text="문구입력"/>
                 </p>
               </div>

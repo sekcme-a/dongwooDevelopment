@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import EditButton from "components/admin/EditButton";
 import useData from "context/data";
+import Image from "next/image";
 
 const MainBanner = () => {
   const {data} = useData()
@@ -30,7 +31,7 @@ const MainBanner = () => {
                   data-aos-once="true"
                   style={{wordBreak:'keep-all', whiteSpace:"pre-line", position:"relative"}}
                 >
-                  {data.main.mainBanner_title}
+                  {data.main.mainBanner_title ?? `함께 동행하는,\n동우개발`}
                    <EditButton type="main" item="mainBanner_title" text="제목" />
                 </h1>
                 <p
@@ -39,7 +40,9 @@ const MainBanner = () => {
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  {data.main.mainBanner_subtitle}
+                  {data.main.mainBanner_subtitle ?? 
+                  "(주)동우개발은 공동주택을 전문으로 하는 관리회사입니다. 고객 여러분의 안전하고 편안한 주거환경을 지원하기 위해 최선을 다하고 있습니다. 전문적이고 친절한 운영진과 체계적인 시스템을 통해 건물 유지보수, 시설 관리, 안전 및 보안 서비스 등을 효율적으로 제공하고 있습니다."
+                  }
                   <EditButton type="main" item="mainBanner_subtitle" text="부제목" />
                 </p>
 
@@ -68,18 +71,26 @@ const MainBanner = () => {
                 className="main-banner-wrap-image"
               >
                 {/* 839*1080 */}
-                <img src={data.main.mainBanner_bannerBg} alt="동우개발" />
-
+                <Image
+                  src={data.main.mainBanner_bannerBg ?? "/images/main-banner/banner.png"} alt="동우개발 이미지" 
+                  width={700}
+                  height={900}
+                  objectFit="contain"
+                  quality={40}
+                  loading="lazy"
+                />
                 <div
                   className="banner-wrap-shape-1"
                 >
-                  <img
+                  <Image
                     src="/images/main-banner/shape-1.png"
-                    alt="동우개발"
+                    alt="패턴"
                     data-aos="fade-down"
                     data-aos-delay="80"
                     data-aos-duration="800"
                     data-aos-once="true"
+                    width={100}
+                    height={100}
                   />
               </div>
                 <EditButton
@@ -90,13 +101,15 @@ const MainBanner = () => {
                   className="banner-wrap-shape-2"
                 >
                   
-                  <img
+                  <Image
                     src="/images/main-banner/shape-2.png"
-                    alt="동우개발"
+                    alt="패턴2"
                     data-aos="fade-up"
                     data-aos-delay="90"
                     data-aos-duration="900"
                     data-aos-once="true"
+                    width={180}
+                    height={100}
                   />
 
                 </div>

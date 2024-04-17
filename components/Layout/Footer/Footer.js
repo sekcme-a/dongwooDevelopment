@@ -4,6 +4,7 @@ import useData from "context/data";
 import EditButton from "components/admin/EditButton";
 
 import styles from "./Footer.module.css"
+import Image from "next/image";
 
 const PR = {position: "relative"}
 
@@ -24,13 +25,19 @@ const Footer = () => {
                   />
                   <Link href="/">
                     <a >
-                      <img src={data.footer.footer_logoUrl} alt="로고" style={{width:"140px", backgroundColor:"white"}}/>
+                      <Image 
+                        src={data.footer.footer_logoUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Ffooter%2Ffooter_logoUrl?alt=media&token=3724df96-8253-437c-8753-2fff2f6924f3"} 
+                        alt="로고" 
+                        width={180}
+                        height={50}
+                        style={{ backgroundColor:"white"}}
+                      />
 
                     </a>
                   </Link>
                 </div>
                 <p style={PR}>
-                  {data.footer.footer_text}
+                  {data.footer.footer_text ?? "동우개발은 밝은 비전을 제시하며 고객감동 서비스를 경영 이념으로 실천하는 (주)동우개발은 공동주택관리 분야를 선도하는 기업이 되겠습니다."}
                   <EditButton type="footer" item="footer_text" text="내용" />
                 </p>
               </div>
@@ -123,20 +130,20 @@ const Footer = () => {
               <div className="single-footer-widget ps-3">
                 <h3>Contact Info</h3>
                 <ul className="footer-contact-info">
-                  <li style={{position:"relative"}}><span>위치:</span> 
-                        {data.footer.footer_contactAddress}
+                  <li style={{position:"relative"}}><span style={{marginRight:"3px"}}>위치:</span> 
+                        {data.footer.footer_contactAddress ?? "서울특별시 도봉구 시루봉로 234, 동우빌딩 2층"}
                         <EditButton type="footer" item="footer_contactAddress" text="위치" />
                   </li>
-                  <li style={{position:"relative"}}><span>이메일:</span> 
-                      <a href={`mailto:${data.footer.footer_contactEmail}`}>{data.footer.footer_contactEmail}</a>
+                  <li style={{position:"relative"}}><span style={{marginRight:"3px"}}>이메일:</span> 
+                      <a href={`mailto:${data.footer.footer_contactEmail ?? "dongwoodh@hanmail.net"}`}>{data.footer.footer_contactEmail ?? "dongwoodh@hanmail.net"}</a>
                       <EditButton type="footer" item="footer_contactEmail" text="이메일" /> 
                   </li>
-                  <li style={{position:"relative"}}><span>전화번호:</span> 
-                      <a href={`tel:${data.footer.footer_contactPhone}`}>{data.footer.footer_contactPhone}</a>
+                  <li style={{position:"relative"}}><span style={{marginRight:"3px"}}>전화번호:</span> 
+                      <a href={`tel:${data.footer.footer_contactPhone ?? "02) 976-2200"}`}>{data.footer.footer_contactPhone ?? "02) 976-2200"}</a>
                       <EditButton type="footer" item="footer_contactPhone" text="전화번호" />
                   </li>
-                  <li style={{position:"relative"}}><span>FAX:</span> 
-                  <a href={`tel:${data.footer.footer_fax}`}>{data.footer.footer_fax}</a>
+                  <li style={{position:"relative"}}><span style={{marginRight:"3px"}}>FAX:</span> 
+                  <a href={`tel:${data.footer.footer_fax ?? "02-903-1297"}`}>{data.footer.footer_fax ?? "02-903-1297"}</a>
                   <EditButton type="footer" item="footer_fax" text="FAX" />
                   </li>
                    {/* <li><a href="/info/map">찾아오는 길</a></li> */}

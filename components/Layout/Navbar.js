@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Link from "utils/ActiveLink";
 
@@ -32,11 +33,13 @@ const NavbarStyle2 = () => {
             <nav className="navbar navbar-expand-lg navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <img
+                 
+                  <Image
                     src="/images/logo.png"
                     alt="동우개발 로고"
-                    // className="o"
-                    style={{width: "200px", marginLeft: "20px"}}
+                    width={180} height={50}
+                    objectFit="contain"
+                    style={{marginLeft: "20px"}}
                   />
                 </a>
               </Link>
