@@ -27,8 +27,8 @@ const NavbarStyle2 = () => {
 
   return (
     <>
-      <div id="navbar" className="navbar-area fixed-top navbar-style-two">
-        <div className="main-navbar">
+      <div id="navbar" className="nbarea fixed-top dev-nav">
+        <div className="mnbar">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg navbar-light">
               <Link href="/">
@@ -49,17 +49,17 @@ const NavbarStyle2 = () => {
                 className={classTwo}
                 type="button"
                 data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
+                data-target="#navsupcon"
+                aria-controls="navsupcon"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="icon-bar top-bar"></span>
-                <span className="icon-bar middle-bar"></span>
-                <span className="icon-bar bottom-bar"></span>
+                <span className="nav-icbar top-bar"></span>
+                <span className="nav-icbar middle-bar"></span>
+                <span className="nav-icbar bottom-bar"></span>
               </button>
 
-              <div className={classOne} id="navbarSupportedContent">
+              <div className={classOne} id="navsupcon">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
                     <Link href="/">
@@ -299,7 +299,7 @@ const NavbarStyle2 = () => {
  
                 <div className="option-item">
                   <Link href="/contact">
-                    <a className="default-btn">
+                    <a className="dev_mainbutton">
                       Contact Us
                     </a>
                   </Link>

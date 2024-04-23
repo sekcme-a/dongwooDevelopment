@@ -8,12 +8,12 @@ const WhyChooseUsStyle1 = () => {
   const {data} = useData()
   return (
     <>
-      <div className="why-choose-us-area pb-100">
+      <div className="dev-ourZone pb-100">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-12">
               <div
-                className="why-choose-us-content"
+                className="dev-over-con"
                 data-aos="fade-right"
                 data-aos-delay="50"
                 data-aos-duration="500"
@@ -29,7 +29,7 @@ const WhyChooseUsStyle1 = () => {
                   <EditButton type="info" item="overview_content" text="내용" />
                 </p>
 
-                <div className="choose-us-inner-box">
+                <div className="overview-box">
                   <div className="icon">
                     <i className="ri-compass-3-line"></i>
                   </div>
@@ -43,7 +43,7 @@ const WhyChooseUsStyle1 = () => {
                   </p>
                 </div>
 
-                <div className="choose-us-inner-box">
+                <div className="overview-box">
                   <div className="icon">
                     <i className="flaticon-public-relations"></i>
                   </div>
@@ -61,13 +61,14 @@ const WhyChooseUsStyle1 = () => {
 
             <div className="col-lg-6 col-md-12">
               <div
-                className="why-choose-us-image"
+                className="overviewImg"
                 data-aos="fade-left"
                 data-aos-delay="50"
                 data-aos-duration="500"
                 data-aos-once="true"
               >
-                <Image src={data.info.overview_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Foverview_bgUrl?alt=media&token=61ed5a41-6a6f-45c6-bed1-4dcd99f38de7"} alt="동우개발" 
+                <Image src={data.info.overview_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Foverview_bgUrl?alt=media&token=61ed5a41-6a6f-45c6-bed1-4dcd99f38de7"} 
+                alt="동우개발 오버뷰" 
                   width={0}
                   height={0}
                   sizes="100vw"
@@ -80,11 +81,7 @@ const WhyChooseUsStyle1 = () => {
                   type="info" item="overview_bgUrl" text="배경이미지 삽입 (1000*910)"
                   defaultImg="/images/info/overview.png"
                 />
-                <div
-                  className="why-choose-us-shape-1"
-                >
-                  <img src="/images/why-choose-us/shape-1.png" alt="동우개발" />
-                </div>
+             
               </div>
             </div>
           </div>

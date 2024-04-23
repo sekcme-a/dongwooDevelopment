@@ -88,9 +88,9 @@ const FileUploaderRestrictions = ({setImgURL, path, imgURL, setLoading}) => {
   const renderFilePreview = file => {
     if (file.type === undefined) {
       console.log(file.url)
-      return <img width={32} height={32} alt={file.name} src={file.url} />
+      return <img width={32} height={32} alt={file.name ?? "사진이미지"} src={file.url} />
     }else if (file.type.startsWith('image')) {
-      return <img width={32} height={32} alt={file.name} src={URL.createObjectURL(file)} />
+      return <img width={32} height={32} alt={file.name ?? "사진 이미지"} src={URL.createObjectURL(file)} />
     } else {
       return <FileDocumentOutline />
     }

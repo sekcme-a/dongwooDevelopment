@@ -62,7 +62,7 @@ const Application = () => {
     <>
       <div className="contact-area pb-100">
         <div className="container">
-          <div className="section-title">
+          <div className="dev-serviceTitle">
             <h2>입사지원</h2>
           </div>
 
@@ -138,7 +138,7 @@ const Application = () => {
                   </div>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12" style={{marginTop: "30px"}}>
-                  <button type="submit" className="btn default-btn" disabled={isSubmitting}>
+                  <button type="submit" className="btn dev_mainbutton" disabled={isSubmitting}>
                     {isSubmitting ? "제출중" : "제출"}
                   </button>
                 </div>

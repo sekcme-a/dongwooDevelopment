@@ -11,7 +11,7 @@ const Business = () => {
 
   return (
     <>
-      <div className="about-area ptb-100">
+      <div className="greetZone ptb-100">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-4 col-md-12" style={PR}>
@@ -42,7 +42,7 @@ const Business = () => {
               data-aos-duration="500"
               data-aos-once="true"
             >
-              <div className="about-content">
+              <div className="greetCon">
                 <span>경영방침 | Management Policy</span>
                 <h3>
                   {data.info.business_title ?? "지속 가능한 혁신을 통한 동우개발의 성장과 발전"}

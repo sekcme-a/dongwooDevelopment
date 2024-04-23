@@ -27,7 +27,7 @@ import { DataProvider } from "context/data";
 import AuthStateChanged from "components/hooks/AuthStateChanged";
 
 import EditControl from "components/admin/EditControl";
-import Loader from "components/Common/Loader";
+// import Loader from "components/Common/Loader";
 
 
 function MyApp({ Component, pageProps }) {
@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
           <AuthStateChanged>
             <Component {...pageProps} />
             <EditControl />
-            <Loader />
+            {/* <Loader /> */}
           </AuthStateChanged>
         </DataProvider>
       </UserDataProvider>

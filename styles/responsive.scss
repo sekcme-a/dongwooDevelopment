@@ -17,7 +17,7 @@
     .pb-75 {
         padding-bottom: 25px;
     }
-    .default-btn {
+    .dev_mainbutton {
         padding: 12px 15px;
         font-size: 14px;
     }
@@ -27,7 +27,7 @@
     }
 
     // Section Title CSS
-    .section-title {
+    .dev-serviceTitle {
         span {
             font-size: 14px;
         }
@@ -35,14 +35,14 @@
             font-size: 22px;
         }
     }
-    .section-title-wrap {
+    .dev-serviceTitle-wrap {
         span {
             font-size: 14px;
         }
         h2 {
             font-size: 22px;
         }
-        .default-btn {
+        .dev_mainbutton {
             display: none;
         }
     }
@@ -68,7 +68,7 @@
         h1 {
             font-size: 30px;
         }
-        .banner-btn {
+        .dev-banbutton {
             margin-top: 20px;
         }
     }
@@ -84,25 +84,25 @@
     .main-banner-bg-text {
         display: none;
     }
-    .main-banner-wrap-content {
+    .mbwrapcon {
         span {
             font-size: 14px;
         }
         h1 {
             font-size: 30px;
         }
-        .banner-btn {
+        .dev-banbutton {
             margin-top: 20px;
         }
     }
-    .main-banner-wrap-image {
+    .dev-mbwrimg {
         margin-top: 30px;
         text-align: center;
 
-        .banner-wrap-shape-1 {
+        .dev_bwshape {
             display: none;
         }
-        .banner-wrap-shape-2 {
+        .dev_bwshapetwo {
             display: none;
         }
     }
@@ -170,7 +170,7 @@
     }
 
     // About Area CSS
-    .about-image {
+    .greetImg {
         margin-bottom: 30px;
         text-align: center;
 
@@ -178,7 +178,7 @@
             display: none;
         }
     }
-    .about-content {
+    .greetCon {
         margin-left: 0;
 
         span {
@@ -191,7 +191,7 @@
     .about-shape-2 {
         display: none;
     }
-    .about-image-wrap {
+    .greetImg-wrap {
         padding-right: 0;
         padding-bottom: 0;
         text-align: center;
@@ -223,7 +223,7 @@
             font-size: 20px;
         }
     }
-    .single-services-box {
+    .dev-serSinbox {
         padding: 20px;
 
         .icon {
@@ -266,7 +266,7 @@
     .fun-fact-shape-1 {
         display: none;
     }
-    .single-funfact-box {
+    .dev-scroll-box {
         padding: 25px;
 
         .icon {
@@ -285,14 +285,14 @@
     }
 
     // Why Choose Us Area CSS
-    .why-choose-us-content {
+    .dev-over-con {
         span {
             font-size: 14px;
         }
         h3 {
             font-size: 20px;
         }
-        .choose-us-inner-box {
+        .overview-box {
             padding-left: 45px;
 
             .icon {
@@ -321,7 +321,7 @@
             }
         }
     }
-    .why-choose-us-image {
+    .overviewImg {
         padding-top: 0;
         padding-bottom: 0;
         padding-right: 0;
@@ -347,7 +347,7 @@
             }
         }
     }
-    .why-choose-us-area-with-video {
+    .dev-ourZone-with-video {
         &::before {
             display: none;
         }
@@ -418,7 +418,7 @@
             display: none;
         }
     }
-    .expertise-content {
+    .dev-expcon {
         margin-top: 0;
 
         span {
@@ -440,7 +440,7 @@
             }
         }
     }
-    .expertise-image-wrap {
+    .dev-expimgw {
         margin-top: 30px;
         text-align: center;
 
@@ -837,7 +837,7 @@
         }
     }
 
-    .main-banner-wrap-area {
+    .mbwra {
         padding-top: 140px;
         padding-bottom: 60px;
     }
@@ -875,7 +875,7 @@
     .pb-75 {
         padding-bottom: 25px;
     }
-    .default-btn {
+    .dev_mainbutton {
         padding: 12px 20px;
         font-size: 14px;
     }
@@ -885,7 +885,7 @@
     }
 
     // Section Title CSS
-    .section-title {
+    .dev-serviceTitle {
         span {
             font-size: 14px;
         }
@@ -893,14 +893,14 @@
             font-size: 25px;
         }
     }
-    .section-title-wrap {
+    .dev-serviceTitle-wrap {
         span {
             font-size: 14px;
         }
         h2 {
             font-size: 25px;
         }
-        .default-btn {
+        .dev_mainbutton {
             display: none;
         }
     }
@@ -926,7 +926,7 @@
         h1 {
             font-size: 30px;
         }
-        .banner-btn {
+        .dev-banbutton {
             margin-top: 20px;
         }
     }
@@ -942,18 +942,18 @@
     .main-banner-bg-text {
         display: none;
     }
-    .main-banner-wrap-content {
+    .mbwrapcon {
         span {
             font-size: 14px;
         }
         h1 {
             font-size: 35px;
         }
-        .banner-btn {
+        .dev-banbutton {
             margin-top: 20px;
         }
     }
-    .main-banner-wrap-image {
+    .dev-mbwrimg {
         margin-top: 30px;
         text-align: center;
     }
@@ -992,7 +992,7 @@
     }
 
     // About Area CSS
-    .about-image {
+    .greetImg {
         margin-bottom: 30px;
         text-align: center;
 
@@ -1000,7 +1000,7 @@
             display: none;
         }
     }
-    .about-content {
+    .greetCon {
         margin-left: 0;
 
         span {
@@ -1013,7 +1013,7 @@
     .about-shape-2 {
         display: none;
     }
-    .about-image-wrap {
+    .greetImg-wrap {
         margin-bottom: 30px;
     }
 
@@ -1033,7 +1033,7 @@
             font-size: 20px;
         }
     }
-    .single-services-box {
+    .dev-serSinbox {
         padding: 20px;
 
         .icon {
@@ -1073,7 +1073,7 @@
     .fun-fact-shape-1 {
         display: none;
     }
-    .single-funfact-box {
+    .dev-scroll-box {
         padding: 25px;
 
         .icon {
@@ -1092,14 +1092,14 @@
     }
 
     // Why Choose Us Area CSS
-    .why-choose-us-content {
+    .dev-over-con {
         span {
             font-size: 14px;
         }
         h3 {
             font-size: 25px;
         }
-        .choose-us-inner-box {
+        .overview-box {
             padding-left: 45px;
 
             .icon {
@@ -1128,14 +1128,14 @@
             }
         }
     }
-    .why-choose-us-image {
+    .overviewImg {
         margin-top: 30px;
 
         .why-choose-us-shape-1 {
             display: none;
         }
     }
-    .why-choose-us-area-with-video {
+    .dev-ourZone-with-video {
         &::before {
             display: none;
         }
@@ -1208,7 +1208,7 @@
         margin-bottom: 30px;
         text-align: center;
     }
-    .expertise-content {
+    .dev-expcon {
         margin-top: 0;
 
         span {
@@ -1230,7 +1230,7 @@
             }
         }
     }
-    .expertise-image-wrap {
+    .dev-expimgw {
         margin-top: 30px;
         text-align: center;
 
@@ -1487,7 +1487,7 @@
         }
     }
 
-    .main-banner-wrap-area {
+    .mbwra {
         padding-top: 135px;
         padding-bottom: 70px;
     }
@@ -1517,7 +1517,7 @@
     .main-banner-bg-text {
         font-size: 155px;
     }
-    .main-banner-wrap-content {
+    .mbwrapcon {
         h1 {
             font-size: 60px;
         }
@@ -1540,7 +1540,7 @@
     }
 
     // About Area CSS
-    .about-content {
+    .greetCon {
         h3 {
             font-size: 30px;
         }
@@ -1557,7 +1557,7 @@
             font-size: 22px;
         }
     }
-    .single-services-box {
+    .dev-serSinbox {
         padding: 20px;
 
         h3 {
@@ -1585,7 +1585,7 @@
             }
         }
     }
-    .single-funfact-box {
+    .dev-scroll-box {
         padding: 25px;
 
         .icon {
@@ -1604,7 +1604,7 @@
     }
 
     // Why Choose Us Area CSS
-    .why-choose-us-content {
+    .dev-over-con {
         h3 {
             font-size: 30px;
         }
@@ -1624,7 +1624,7 @@
             }
         }
     }
-    .why-choose-us-image {
+    .overviewImg {
         .why-choose-us-shape-1 {
             display: none;
         }
@@ -1642,7 +1642,7 @@
     .expertise-area {
         padding-top: 50px;
     }
-    .expertise-content {
+    .dev-expcon {
         margin-top: -50px;
 
         h3 {
@@ -1813,7 +1813,7 @@
     }
 
     // About Area CSS
-    .about-content {
+    .greetCon {
         h3 {
             font-size: 30px;
         }
@@ -1836,12 +1836,12 @@
     }
 
     // Why Choose Us Area CSS
-    .why-choose-us-content {
+    .dev-over-con {
         h3 {
             font-size: 30px;
         }
     }
-    .why-choose-us-image {
+    .overviewImg {
         .why-choose-us-shape-1 {
             display: none;
         }
@@ -1854,7 +1854,7 @@
     .expertise-area {
         padding-top: 50px;
     }
-    .expertise-content {
+    .dev-expcon {
         margin-top: -50px;
 
         h3 {
@@ -1926,7 +1926,7 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .main-navbar {
+    .mnbar {
         .navbar {
             .navbar-nav {
                 .nav-item {

@@ -134,7 +134,7 @@ img {
 /*================================================
 Default Btn CSS
 =================================================*/
-.default-btn {
+.dev_mainbutton {
     padding: 15px 30px;
     text-align: center;
     color: var(--white-color) !important;
@@ -234,7 +234,7 @@ Default Btn CSS
 /*================================================
 Section Title CSS
 =================================================*/
-.section-title {
+.dev-serviceTitle {
     text-align: center;
     max-width: 620px;
     margin: 0 auto 35px;
@@ -252,7 +252,7 @@ Section Title CSS
         line-height: 1.4;
     }
 }
-.section-title-wrap {
+.dev-serviceTitle-wrap {
     margin-bottom: 35px;
 
     span {
@@ -406,7 +406,7 @@ Main Banner Area CSS
         margin-bottom: 0;
         margin-right: 30px;
     }
-    .banner-btn {
+    .dev-banbutton {
         margin-top: 30px;
     }
 }
@@ -448,13 +448,13 @@ Main Banner Area CSS
     z-index: -1;
     font-weight: 700;
 }
-.main-banner-wrap-area {
+.mbwra {
     background-color: #F9F5F4;
     padding-top: 184px;
     padding-bottom: 100px;
     overflow: hidden;
 }
-.main-banner-wrap-content {
+.mbwrapcon {
     span {
         font-size: var(--font-size);
         color: var(--main-color);
@@ -473,21 +473,21 @@ Main Banner Area CSS
         margin-bottom: 0;
         margin-right: 30px;
     }
-    .banner-btn {
+    .dev-banbutton {
         margin-top: 30px;
     }
 }
-.main-banner-wrap-image {
+.dev-mbwrimg {
     position: relative;
     z-index: 1;
 
-    .banner-wrap-shape-1 {
+    .dev_bwshape {
         position: absolute;
         left: -20px;
         top: 5px;
         z-index: -1;
     }
-    .banner-wrap-shape-2 {
+    .dev_bwshapetwo {
         position: absolute;
         left: 10px;
         bottom: 30px;
@@ -646,12 +646,12 @@ Features Area CSS
 /*================================================
 About Area CSS
 =================================================*/
-.about-area {
+.greetZone {
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
-.about-image {
+.greetImg {
     position: relative;
 
     .about-shape-1 {
@@ -661,7 +661,7 @@ About Area CSS
         transform: translateY(-5%) translateX(-25%);
     }
 }
-.about-content {
+.greetCon {
     margin-left: 25px;
 
     span {
@@ -689,7 +689,7 @@ About Area CSS
     bottom: 50px;
     z-index: -1;
 }
-.about-image-wrap {
+.greetImg-wrap {
     position: relative;
     padding-right: 100px;
     padding-bottom: 50px;
@@ -716,7 +716,7 @@ About Area CSS
 /*================================================
 Services Area CSS
 =================================================*/
-.services-area {
+.devserzone {
     &.bg-F9F5F4 {
         background-color: #F9F5F4;
     }
@@ -781,7 +781,7 @@ Services Area CSS
            color: var(--black-color); 
         }
     }
-    .services-btn {
+    .dev-serButton {
         font-size: var(--font-size);
         font-weight: 500;
         color: var(--main-color);
@@ -807,13 +807,13 @@ Services Area CSS
         p {
             color: var(--white-color);
         }
-        .services-btn {
+        .dev-serButton {
             color: var(--white-color);
             letter-spacing: 1px;
         }
     }
 }
-.single-services-box {
+.dev-serSinbox {
     margin-bottom: 25px;
     background-color: var(--white-color);
     box-shadow: -13px 8px 32px rgba(217, 35, 12, 0.04);
@@ -863,7 +863,7 @@ Services Area CSS
            color: var(--black-color); 
         }
     }
-    .services-btn {
+    .dev-serButton {
         font-size: var(--font-size);
         font-weight: 500;
         color: var(--main-color);
@@ -897,7 +897,7 @@ Services Area CSS
         p {
             color: var(--white-color);
         }
-        .services-btn {
+        .dev-serButton {
             color: var(--white-color);
             letter-spacing: 1px;
         }
@@ -907,7 +907,7 @@ Services Area CSS
 /*================================================
 Funfact Area CSS
 =================================================*/
-.fun-fact-area {
+.dev-scrollZone {
     background-image: url(/images/funfact/funfact-bg.jpg);
     background-position: center center;
     background-size: cover;
@@ -931,7 +931,7 @@ Funfact Area CSS
     &.bg-three {
         background-image: url(/images/funfact/funfact-bg-3.jpg);
 
-        .section-title {
+        .dev-serviceTitle {
             h2 {
                 color: var(--white-color);
             }
@@ -979,7 +979,7 @@ Funfact Area CSS
     top: 10%;
     transform: translateY(-10%);
 }
-.single-funfact-box {
+.dev-scroll-box {
     background-color: var(--white-color);
     margin-bottom: 25px;
     text-align: center;
@@ -1064,7 +1064,7 @@ Case Study Area CSS
     position: relative;
     z-index: 1;
 
-    .section-title-wrap {
+    .dev-serviceTitle-wrap {
         margin-bottom: 35px;
     
         span {
@@ -1166,10 +1166,10 @@ Case Study Area CSS
 /*================================================
 Why Choose Us Area CSS
 =================================================*/
-.why-choose-us-area {
+.dev-ourZone {
     overflow: hidden;
 }
-.why-choose-us-content {
+.dev-over-con {
     span {
         font-size: var(--font-size);
         color: var(--main-color);
@@ -1185,7 +1185,7 @@ Why Choose Us Area CSS
     p {
         margin-bottom: 0;
     }
-    .choose-us-inner-box {
+    .overview-box {
         position: relative;
         margin-top: 25px;
         padding-left: 75px;
@@ -1237,7 +1237,7 @@ Why Choose Us Area CSS
         }
     }
 }
-.why-choose-us-image {
+.overviewImg {
     position: relative;
     z-index: 1;
     padding-top: 30px;
@@ -1261,7 +1261,7 @@ Why Choose Us Area CSS
         bottom: 15px;
     }
 }
-.why-choose-us-area-with-video {
+.dev-ourZone-with-video {
     background-image: url(/images/why-choose-us/why-choose-us-bg.jpg);
     background-position: center center;
     background-size: cover;
@@ -1557,7 +1557,7 @@ Expertise Area CSS
     padding-top: 30px;
     overflow: hidden;
 }
-.expertise-area-with-white-color {
+.dev-expawwc {
     overflow: hidden;
 }
 .expertise-image {
@@ -1580,7 +1580,7 @@ Expertise Area CSS
         transform: translateY(-35%) translateX(-20%);
     }
 }
-.expertise-content {
+.dev-expcon {
     position: relative;
     margin-top: -30px;
 
@@ -1643,7 +1643,7 @@ Expertise Area CSS
         }
     }
 }
-.expertise-image-wrap {
+.dev-expimgw {
     position: relative;
 
     .expertise-shape-2 {
@@ -2022,7 +2022,7 @@ Team Area CSS
         bottom: 0;
         z-index: -1;
     }
-    .section-title {
+    .dev-serviceTitle {
         max-width: 565px;
 
         h2 {
@@ -2183,7 +2183,7 @@ Pricing Area CSS
         .pricing-btn {
             text-align: center;
     
-            .default-btn {
+            .dev_mainbutton {
                 width: 100%;
                 background: var(--gradient-color);
                 border: 1px solid var(--main-color);
@@ -2238,7 +2238,7 @@ Pricing Area CSS
     .pricing-btn {
         text-align: center;
 
-        .default-btn {
+        .dev_mainbutton {
             width: 100%;
             background: transparent;
             border: 1px solid var(--main-color);
@@ -2440,7 +2440,7 @@ Working Process Area CSS
 .working-process-area {
     background-color: #F9F5F4;
 
-    .section-title {
+    .dev-serviceTitle {
         max-width: 650px;
     }
     .row {
@@ -2637,7 +2637,7 @@ Contact Form Area CSS
     .send-btn {
         margin-top: 25px;
 
-        .default-btn {
+        .dev_mainbutton {
             border: none;
         }
     }
@@ -2821,7 +2821,7 @@ Login Area CSS
                 }
             }
         }
-        .default-btn {
+        .dev_mainbutton {
             border: none;
             margin-top: 25px;
         }
@@ -2911,7 +2911,7 @@ Register Area CSS
             font-style: italic;
             margin-bottom: 0;
         }
-        .default-btn {
+        .dev_mainbutton {
             border: none;
             margin-top: 25px;
         }
@@ -2984,7 +2984,7 @@ Forgot Password Area CSS
                 }
             }
         }
-        .default-btn {
+        .dev_mainbutton {
             border: none;
         }
     }
@@ -3122,7 +3122,7 @@ Privacy Policy Area CSS
         max-width: 550px;
         margin: auto;
     }
-    .default-btn {
+    .dev_mainbutton {
         margin-top: 25px;
     }
 }
@@ -3215,7 +3215,7 @@ Coming Soon Area CSS
                 }
             }
         }
-        .default-btn {
+        .dev_mainbutton {
             width: 100%;
             border: none;
 
@@ -3734,7 +3734,7 @@ Blog Details Area CSS
                 }
             }
         }
-        .default-btn {
+        .dev_mainbutton {
             border: none;
         }
     }
@@ -4218,7 +4218,7 @@ Buy Now Btn
         margin-top: 40px;
         position: relative;
 
-        .default-btn {
+        .dev_mainbutton {
             padding: 15px 35px;
             font-size: 18px;
             font-weight: 600;

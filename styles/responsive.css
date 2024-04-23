@@ -15,7 +15,7 @@
   .pb-75 {
     padding-bottom: 25px;
   }
-  .default-btn {
+  .dev_mainbutton {
     padding: 12px 15px;
     font-size: 14px;
   }
@@ -23,19 +23,19 @@
     padding: 12px 15px;
     font-size: 14px;
   }
-  .section-title span {
+  .dev-serviceTitle span {
     font-size: 14px;
   }
-  .section-title h2 {
+  .dev-serviceTitle h2 {
     font-size: 22px;
   }
-  .section-title-wrap span {
+  .dev-serviceTitle-wrap span {
     font-size: 14px;
   }
-  .section-title-wrap h2 {
+  .dev-serviceTitle-wrap h2 {
     font-size: 22px;
   }
-  .section-title-wrap .default-btn {
+  .dev-serviceTitle-wrap .dev_mainbutton {
     display: none;
   }
   .main-banner-area {
@@ -56,7 +56,7 @@
   .main-banner-content h1 {
     font-size: 30px;
   }
-  .main-banner-content .banner-btn {
+  .main-banner-content .dev-banbutton {
     margin-top: 20px;
   }
   .main-banner-image-slides {
@@ -71,23 +71,23 @@
   .main-banner-bg-text {
     display: none;
   }
-  .main-banner-wrap-content span {
+  .mbwrapcon span {
     font-size: 14px;
   }
-  .main-banner-wrap-content h1 {
+  .mbwrapcon h1 {
     font-size: 30px;
   }
-  .main-banner-wrap-content .banner-btn {
+  .mbwrapcon .dev-banbutton {
     margin-top: 20px;
   }
-  .main-banner-wrap-image {
+  .dev-mbwrimg {
     margin-top: 30px;
     text-align: center;
   }
-  .main-banner-wrap-image .banner-wrap-shape-1 {
+  .dev-mbwrimg .dev_bwshape {
     display: none;
   }
-  .main-banner-wrap-image .banner-wrap-shape-2 {
+  .dev-mbwrimg .dev_bwshapetwo {
     display: none;
   }
   .main-hero-area {
@@ -140,35 +140,35 @@
   .features-shape-1 {
     display: none;
   }
-  .about-image {
+  .greetImg {
     margin-bottom: 30px;
     text-align: center;
   }
-  .about-image .about-shape-1 {
+  .greetImg .about-shape-1 {
     display: none;
   }
-  .about-content {
+  .greetCon {
     margin-left: 0;
   }
-  .about-content span {
+  .greetCon span {
     font-size: 14px;
   }
-  .about-content h3 {
+  .greetCon h3 {
     font-size: 20px;
   }
   .about-shape-2 {
     display: none;
   }
-  .about-image-wrap {
+  .greetImg-wrap {
     padding-right: 0;
     padding-bottom: 0;
     text-align: center;
     margin-bottom: 30px;
   }
-  .about-image-wrap img:nth-child(2) {
+  .greetImg-wrap img:nth-child(2) {
     max-width: 200px;
   }
-  .about-image-wrap .about-shape-3 {
+  .greetImg-wrap .about-shape-3 {
     display: none;
   }
   .single-services-card {
@@ -183,16 +183,16 @@
   .single-services-card h3 {
     font-size: 20px;
   }
-  .single-services-box {
+  .dev-serSinbox {
     padding: 20px;
   }
-  .single-services-box .icon i {
+  .dev-serSinbox .icon i {
     height: 55px;
     width: 55px;
     line-height: 55px;
     font-size: 25px;
   }
-  .single-services-box h3 {
+  .dev-serSinbox h3 {
     font-size: 20px;
   }
   .single-funfact-card {
@@ -217,58 +217,58 @@
   .fun-fact-shape-1 {
     display: none;
   }
-  .single-funfact-box {
+  .dev-scroll-box {
     padding: 25px;
   }
-  .single-funfact-box .icon i {
+  .dev-scroll-box .icon i {
     font-size: 30px;
   }
-  .single-funfact-box h3 {
+  .dev-scroll-box h3 {
     font-size: 30px;
   }
-  .single-funfact-box h3 .small-text {
+  .dev-scroll-box h3 .small-text {
     font-size: 30px;
     left: -2px;
   }
-  .why-choose-us-content span {
+  .dev-over-con span {
     font-size: 14px;
   }
-  .why-choose-us-content h3 {
+  .dev-over-con h3 {
     font-size: 20px;
   }
-  .why-choose-us-content .choose-us-inner-box {
+  .dev-over-con .overview-box {
     padding-left: 45px;
   }
-  .why-choose-us-content .choose-us-inner-box .icon i {
+  .dev-over-con .overview-box .icon i {
     font-size: 30px;
   }
-  .why-choose-us-content .choose-us-inner-box h4 {
+  .dev-over-con .overview-box h4 {
     font-size: 18px;
   }
-  .why-choose-us-content.wrap-color {
+  .dev-over-con.wrap-color {
     padding: 20px;
     margin-top: 30px;
   }
-  .why-choose-us-content .inner-box-content {
+  .dev-over-con .inner-box-content {
     padding-left: 45px;
   }
-  .why-choose-us-content .inner-box-content .icon i {
+  .dev-over-con .inner-box-content .icon i {
     font-size: 30px;
   }
-  .why-choose-us-content .inner-box-content h4 {
+  .dev-over-con .inner-box-content h4 {
     font-size: 18px;
   }
-  .why-choose-us-image {
+  .overviewImg {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
     margin-left: 0;
     margin-top: 30px;
   }
-  .why-choose-us-image::before {
+  .overviewImg::before {
     display: none;
   }
-  .why-choose-us-image .why-choose-us-shape-1 {
+  .overviewImg .why-choose-us-shape-1 {
     display: none;
   }
   .why-choose-us-video-view .video-btn {
@@ -281,7 +281,7 @@
     -webkit-animation: unset;
             animation: unset;
   }
-  .why-choose-us-area-with-video::before {
+  .dev-ourZone-with-video::before {
     display: none;
   }
   .single-testimonials-box .icon i {
@@ -334,32 +334,32 @@
   .expertise-image .expertise-shape-2 {
     display: none;
   }
-  .expertise-content {
+  .dev-expcon {
     margin-top: 0;
   }
-  .expertise-content span {
+  .dev-expcon span {
     font-size: 14px;
   }
-  .expertise-content h3 {
+  .dev-expcon h3 {
     font-size: 22px;
   }
-  .expertise-content .expertise-inner-box {
+  .dev-expcon .expertise-inner-box {
     padding-left: 45px;
   }
-  .expertise-content .expertise-inner-box .icon i {
+  .dev-expcon .expertise-inner-box .icon i {
     font-size: 30px;
   }
-  .expertise-content .expertise-inner-box h4 {
+  .dev-expcon .expertise-inner-box h4 {
     font-size: 18px;
   }
-  .expertise-image-wrap {
+  .dev-expimgw {
     margin-top: 30px;
     text-align: center;
   }
-  .expertise-image-wrap .expertise-shape-2 {
+  .dev-expimgw .expertise-shape-2 {
     display: none;
   }
-  .expertise-image-wrap.top-zero {
+  .dev-expimgw.top-zero {
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -636,7 +636,7 @@
   .cta-area .cta-content h3 {
     font-size: 40px;
   }
-  .main-banner-wrap-area {
+  .mbwra {
     padding-top: 140px;
     padding-bottom: 60px;
   }
@@ -665,7 +665,7 @@
   .pb-75 {
     padding-bottom: 25px;
   }
-  .default-btn {
+  .dev_mainbutton {
     padding: 12px 20px;
     font-size: 14px;
   }
@@ -673,19 +673,19 @@
     padding: 12px 20px;
     font-size: 14px;
   }
-  .section-title span {
+  .dev-serviceTitle span {
     font-size: 14px;
   }
-  .section-title h2 {
+  .dev-serviceTitle h2 {
     font-size: 25px;
   }
-  .section-title-wrap span {
+  .dev-serviceTitle-wrap span {
     font-size: 14px;
   }
-  .section-title-wrap h2 {
+  .dev-serviceTitle-wrap h2 {
     font-size: 25px;
   }
-  .section-title-wrap .default-btn {
+  .dev-serviceTitle-wrap .dev_mainbutton {
     display: none;
   }
   .main-banner-area {
@@ -706,7 +706,7 @@
   .main-banner-content h1 {
     font-size: 30px;
   }
-  .main-banner-content .banner-btn {
+  .main-banner-content .dev-banbutton {
     margin-top: 20px;
   }
   .main-banner-image-slides {
@@ -721,16 +721,16 @@
   .main-banner-bg-text {
     display: none;
   }
-  .main-banner-wrap-content span {
+  .mbwrapcon span {
     font-size: 14px;
   }
-  .main-banner-wrap-content h1 {
+  .mbwrapcon h1 {
     font-size: 35px;
   }
-  .main-banner-wrap-content .banner-btn {
+  .mbwrapcon .dev-banbutton {
     margin-top: 20px;
   }
-  .main-banner-wrap-image {
+  .dev-mbwrimg {
     margin-top: 30px;
     text-align: center;
   }
@@ -757,26 +757,26 @@
   .features-shape-1 {
     display: none;
   }
-  .about-image {
+  .greetImg {
     margin-bottom: 30px;
     text-align: center;
   }
-  .about-image .about-shape-1 {
+  .greetImg .about-shape-1 {
     display: none;
   }
-  .about-content {
+  .greetCon {
     margin-left: 0;
   }
-  .about-content span {
+  .greetCon span {
     font-size: 14px;
   }
-  .about-content h3 {
+  .greetCon h3 {
     font-size: 25px;
   }
   .about-shape-2 {
     display: none;
   }
-  .about-image-wrap {
+  .greetImg-wrap {
     margin-bottom: 30px;
   }
   .single-services-card {
@@ -791,16 +791,16 @@
   .single-services-card h3 {
     font-size: 20px;
   }
-  .single-services-box {
+  .dev-serSinbox {
     padding: 20px;
   }
-  .single-services-box .icon i {
+  .dev-serSinbox .icon i {
     height: 55px;
     width: 55px;
     line-height: 55px;
     font-size: 25px;
   }
-  .single-services-box h3 {
+  .dev-serSinbox h3 {
     font-size: 20px;
   }
   .single-funfact-card {
@@ -821,54 +821,54 @@
   .fun-fact-shape-1 {
     display: none;
   }
-  .single-funfact-box {
+  .dev-scroll-box {
     padding: 25px;
   }
-  .single-funfact-box .icon i {
+  .dev-scroll-box .icon i {
     font-size: 30px;
   }
-  .single-funfact-box h3 {
+  .dev-scroll-box h3 {
     font-size: 30px;
   }
-  .single-funfact-box h3 .small-text {
+  .dev-scroll-box h3 .small-text {
     font-size: 30px;
     left: -2px;
   }
-  .why-choose-us-content span {
+  .dev-over-con span {
     font-size: 14px;
   }
-  .why-choose-us-content h3 {
+  .dev-over-con h3 {
     font-size: 25px;
   }
-  .why-choose-us-content .choose-us-inner-box {
+  .dev-over-con .overview-box {
     padding-left: 45px;
   }
-  .why-choose-us-content .choose-us-inner-box .icon i {
+  .dev-over-con .overview-box .icon i {
     font-size: 30px;
   }
-  .why-choose-us-content .choose-us-inner-box h4 {
+  .dev-over-con .overview-box h4 {
     font-size: 18px;
   }
-  .why-choose-us-content.wrap-color {
+  .dev-over-con.wrap-color {
     padding: 35px;
     margin-top: 35px;
   }
-  .why-choose-us-content .inner-box-content {
+  .dev-over-con .inner-box-content {
     padding-left: 45px;
   }
-  .why-choose-us-content .inner-box-content .icon i {
+  .dev-over-con .inner-box-content .icon i {
     font-size: 30px;
   }
-  .why-choose-us-content .inner-box-content h4 {
+  .dev-over-con .inner-box-content h4 {
     font-size: 18px;
   }
-  .why-choose-us-image {
+  .overviewImg {
     margin-top: 30px;
   }
-  .why-choose-us-image .why-choose-us-shape-1 {
+  .overviewImg .why-choose-us-shape-1 {
     display: none;
   }
-  .why-choose-us-area-with-video::before {
+  .dev-ourZone-with-video::before {
     display: none;
   }
   .why-choose-us-video-view .video-btn::before {
@@ -922,32 +922,32 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .expertise-content {
+  .dev-expcon {
     margin-top: 0;
   }
-  .expertise-content span {
+  .dev-expcon span {
     font-size: 14px;
   }
-  .expertise-content h3 {
+  .dev-expcon h3 {
     font-size: 25px;
   }
-  .expertise-content .expertise-inner-box {
+  .dev-expcon .expertise-inner-box {
     padding-left: 45px;
   }
-  .expertise-content .expertise-inner-box .icon i {
+  .dev-expcon .expertise-inner-box .icon i {
     font-size: 30px;
   }
-  .expertise-content .expertise-inner-box h4 {
+  .dev-expcon .expertise-inner-box h4 {
     font-size: 18px;
   }
-  .expertise-image-wrap {
+  .dev-expimgw {
     margin-top: 30px;
     text-align: center;
   }
-  .expertise-image-wrap .expertise-shape-2 {
+  .dev-expimgw .expertise-shape-2 {
     display: none;
   }
-  .expertise-image-wrap.top-zero {
+  .dev-expimgw.top-zero {
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -1115,7 +1115,7 @@
   .cta-area .cta-content h3 {
     font-size: 55px;
   }
-  .main-banner-wrap-area {
+  .mbwra {
     padding-top: 135px;
     padding-bottom: 70px;
   }
@@ -1138,7 +1138,7 @@
   .main-banner-bg-text {
     font-size: 155px;
   }
-  .main-banner-wrap-content h1 {
+  .mbwrapcon h1 {
     font-size: 60px;
   }
   .main-hero-content {
@@ -1150,7 +1150,7 @@
   .single-features-card h3 {
     font-size: 25px;
   }
-  .about-content h3 {
+  .greetCon h3 {
     font-size: 30px;
   }
   .about-shape-2 {
@@ -1162,10 +1162,10 @@
   .single-services-card h3 {
     font-size: 22px;
   }
-  .single-services-box {
+  .dev-serSinbox {
     padding: 20px;
   }
-  .single-services-box h3 {
+  .dev-serSinbox h3 {
     font-size: 22px;
   }
   .single-funfact-card {
@@ -1183,38 +1183,38 @@
   .single-funfact-card p br {
     display: none;
   }
-  .single-funfact-box {
+  .dev-scroll-box {
     padding: 25px;
   }
-  .single-funfact-box .icon i {
+  .dev-scroll-box .icon i {
     font-size: 30px;
   }
-  .single-funfact-box h3 {
+  .dev-scroll-box h3 {
     font-size: 30px;
   }
-  .single-funfact-box h3 .small-text {
+  .dev-scroll-box h3 .small-text {
     font-size: 30px;
     left: -2px;
   }
-  .why-choose-us-content h3 {
+  .dev-over-con h3 {
     font-size: 30px;
   }
-  .why-choose-us-content.wrap-color {
+  .dev-over-con.wrap-color {
     padding: 30px;
   }
-  .why-choose-us-content .inner-box-content {
+  .dev-over-con .inner-box-content {
     padding-left: 45px;
   }
-  .why-choose-us-content .inner-box-content .icon i {
+  .dev-over-con .inner-box-content .icon i {
     font-size: 35px;
   }
-  .why-choose-us-content .inner-box-content h4 {
+  .dev-over-con .inner-box-content h4 {
     font-size: 20px;
   }
-  .why-choose-us-image .why-choose-us-shape-1 {
+  .overviewImg .why-choose-us-shape-1 {
     display: none;
   }
-  .why-choose-us-image::before {
+  .overviewImg::before {
     width: 360px;
   }
   .single-testimonials-box {
@@ -1223,22 +1223,22 @@
   .expertise-area {
     padding-top: 50px;
   }
-  .expertise-content {
+  .dev-expcon {
     margin-top: -50px;
   }
-  .expertise-content h3 {
+  .dev-expcon h3 {
     font-size: 30px;
   }
-  .expertise-content .expertise-inner-box {
+  .dev-expcon .expertise-inner-box {
     padding-left: 45px;
   }
-  .expertise-content .expertise-inner-box .icon i {
+  .dev-expcon .expertise-inner-box .icon i {
     font-size: 30px;
   }
-  .expertise-content .expertise-inner-box h4 {
+  .dev-expcon .expertise-inner-box h4 {
     font-size: 18px;
   }
-  .expertise-content .expertise-inner-box p {
+  .dev-expcon .expertise-inner-box p {
     font-size: 14px;
   }
   .team-box-content h3 {
@@ -1318,7 +1318,7 @@
   .single-features-card h3 {
     font-size: 30px;
   }
-  .about-content h3 {
+  .greetCon h3 {
     font-size: 30px;
   }
   .single-services-card {
@@ -1330,34 +1330,34 @@
   .single-funfact-card::before {
     display: none;
   }
-  .why-choose-us-content h3 {
+  .dev-over-con h3 {
     font-size: 30px;
   }
-  .why-choose-us-image .why-choose-us-shape-1 {
+  .overviewImg .why-choose-us-shape-1 {
     display: none;
   }
-  .why-choose-us-image::before {
+  .overviewImg::before {
     width: 360px;
   }
   .expertise-area {
     padding-top: 50px;
   }
-  .expertise-content {
+  .dev-expcon {
     margin-top: -50px;
   }
-  .expertise-content h3 {
+  .dev-expcon h3 {
     font-size: 30px;
   }
-  .expertise-content .expertise-inner-box {
+  .dev-expcon .expertise-inner-box {
     padding-left: 45px;
   }
-  .expertise-content .expertise-inner-box .icon i {
+  .dev-expcon .expertise-inner-box .icon i {
     font-size: 30px;
   }
-  .expertise-content .expertise-inner-box h4 {
+  .dev-expcon .expertise-inner-box h4 {
     font-size: 18px;
   }
-  .expertise-content .expertise-inner-box p {
+  .dev-expcon .expertise-inner-box p {
     font-size: 14px;
   }
   .team-box-content h3 {
@@ -1388,7 +1388,7 @@
   }
 }
 @media only screen and (max-width: 991px) {
-  .main-navbar .navbar .navbar-nav .nav-item a::after {
+  .mnbar .navbar .navbar-nav .nav-item a::after {
     display: none;
   }
 }

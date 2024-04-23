@@ -10,11 +10,11 @@ const MainBanner = () => {
 
   return (
     <>
-      <div className="main-banner-wrap-area">
+      <div className="mbwra">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-12">
-              <div className="main-banner-wrap-content" style={{marginLeft: "10px"}}>
+              <div className="mbwrapcon" style={{marginLeft: "10px"}}>
                 <span
                   data-aos="fade-right"
                   data-aos-delay="50"
@@ -47,14 +47,14 @@ const MainBanner = () => {
                 </p>
 
                 <div
-                  className="banner-btn"
+                  className="dev-banbutton"
                   data-aos="fade-right"
                   data-aos-delay="90"
                   data-aos-duration="900"
                   data-aos-once="true"
                 >
                   <Link href="/info/overview">
-                    <a className="default-btn">회사소개 보러가기</a>
+                    <a className="dev_mainbutton">회사소개 보러가기</a>
                   </Link>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const MainBanner = () => {
               data-aos-once="true"
             >
               <div
-                className="main-banner-wrap-image"
+                className="dev-mbwrimg"
               >
                 {/* 839*1080 */}
                 <Image
@@ -80,7 +80,7 @@ const MainBanner = () => {
                   loading="lazy"
                 />
                 <div
-                  className="banner-wrap-shape-1"
+                  className="dev_bwshape"
                 >
                   <Image
                     src="/images/main-banner/shape-1.png"
@@ -98,7 +98,7 @@ const MainBanner = () => {
                   style={{position:"absolute", top: 150, right: 100}}
                 />
                 <div
-                  className="banner-wrap-shape-2"
+                  className="dev_bwshapetwo"
                 >
                   
                   <Image

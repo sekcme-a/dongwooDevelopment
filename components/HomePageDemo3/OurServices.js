@@ -80,13 +80,13 @@ const OurServices = () => {
 
   return (
     <>
-        <div className="services-area bg-F9F5F4 pt-100 pb-75">
+        <div className="devserzone bg-F9F5F4 pt-100 pb-75">
         <div className="container" style={PR}>
           <EditButton
             mode="arrOfObj_services"
             type="main" item="ourServices_list" text="내용을 입력해주세요."
           />
-          <div className="section-title">
+          <div className="dev-serviceTitle">
             <span>관리 분야</span>
             <h2>동우 개발의 관리 분야를 소개합니다.</h2>
           </div>
@@ -94,7 +94,7 @@ const OurServices = () => {
           <div className="row justify-content-center">
             {list.map((item, index) => (
               <div className="col-lg-4 col-md-6" key={index} >
-                <div className="single-services-box" style={windowWidth>=992 ? {minHeight: "340px"} : {}}>
+                <div className="dev-serSinbox" style={windowWidth>=992 ? {minHeight: "340px"} : {}}>
                   <div className="icon">
                     <i className={`${icons[index]}`}></i>
                   </div> 
@@ -107,7 +107,7 @@ const OurServices = () => {
                     {item.text}
                   </p>
                   <Link href={item.url}>
-                    <a className="services-btn">자세히 보기</a>
+                    <a className="dev-serButton">자세히 보기</a>
                   </Link>
                   <div className="back-icon">
                     <i className="ri-cast-line"></i>

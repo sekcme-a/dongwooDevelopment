@@ -12,12 +12,12 @@ const OurExpertise = () => {
 
   return (
     <>
-      <div className="expertise-area-with-white-color ptb-100">
+      <div className="dev-expawwc ptb-100">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-12">
               <div
-                className="expertise-image-wrap top-zero"
+                className="dev-expimgw top-zero"
                 data-aos="fade-right"
                 data-aos-delay="50"
                 data-aos-duration="500"
@@ -53,7 +53,7 @@ const OurExpertise = () => {
 
             <div className="col-lg-6 col-md-12">
               <div
-                className="expertise-content black-color"
+                className="dev-expcon black-color"
                 data-aos="fade-left"
                 data-aos-delay="50"
                 data-aos-duration="500"

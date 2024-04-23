@@ -1,7 +1,7 @@
 /*================================================
 Navbar Area CSS
 =================================================*/
-.main-navbar {
+.mnbar {
     padding: 10px 0;
 
     .container-fluid {
@@ -357,7 +357,7 @@ Navbar Area CSS
                         transition: var(--transition);
                     }
                 }
-                .default-btn {
+                .dev_mainbutton {
                     background: var(--black-color);
 
                     &::before {
@@ -371,7 +371,7 @@ Navbar Area CSS
         }
     }
 }
-.navbar-area {
+.nbarea {
     &.is-sticky {
         position: fixed;
         top: 0;
@@ -383,7 +383,7 @@ Navbar Area CSS
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
         transition: var(--transition);
 
-        .main-navbar {
+        .mnbar {
             .navbar {
                 .others-options {
                     .option-item {
@@ -413,7 +413,7 @@ Navbar Area CSS
                                 }
                             }
                         }
-                        .default-btn {
+                        .dev_mainbutton {
                             background: var(--black-color);
         
                             &::before {
@@ -429,9 +429,9 @@ Navbar Area CSS
         }
     }
 }
-.navbar-style-two {
+.dev-nav {
     background-color: #fff;
-    .main-navbar {
+    .mnbar {
         .navbar {
             .others-options {
                 .option-item {
@@ -461,7 +461,7 @@ Navbar Area CSS
                             }
                         }
                     }
-                    .default-btn {
+                    .dev_mainbutton {
                         background: var(--gradient-color);
     
                         &::before {
@@ -476,11 +476,11 @@ Navbar Area CSS
         }
     }
     &.is-sticky {
-        .main-navbar {
+        .mnbar {
             .navbar {
                 .others-options {
                     .option-item {
-                        .default-btn {
+                        .dev_mainbutton {
                             background: var(--gradient-color);
         
                             &::before {
@@ -505,7 +505,7 @@ Navbar Area CSS
         outline: 0;
         box-shadow: none;
     }
-    .icon-bar {
+    .nav-icbar {
         width: 35px;
         transition: all 0.3s;
         background: #333;
@@ -555,12 +555,12 @@ Navbar Area CSS
 }
 
 @media only screen and (max-width: 991px) {
-    .navbar-area {
+    .nbarea {
         background-color: var(--white-color);
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .main-navbar {
+    .mnbar {
         padding: 0;
 
         .container-fluid {
@@ -639,7 +639,7 @@ Navbar Area CSS
                     .search-box {
                         display: none;
                     }
-                    .default-btn {
+                    .dev_mainbutton {
                         padding: 8px 10px;
                         font-size: 10px;
                     }
@@ -650,7 +650,7 @@ Navbar Area CSS
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .main-navbar {
+    .mnbar {
         background-color: #fff;
         .container-fluid {
             padding-left: 15px;
@@ -693,7 +693,7 @@ Navbar Area CSS
                         }
                     }
 
-                    .default-btn {
+                    .dev_mainbutton {
                         padding: 10px 15px;
                         font-size: 12px;
                     }
@@ -706,7 +706,7 @@ Navbar Area CSS
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .main-navbar {
+    .mnbar {
         .navbar {
             .navbar-brand {
                 padding: 0 20px 0 0;
@@ -735,7 +735,7 @@ Navbar Area CSS
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1499px) {
-    .main-navbar {
+    .mnbar {
         .navbar {
             .navbar-brand {
                 padding: 0 20px 0 0;
@@ -751,7 +751,7 @@ Navbar Area CSS
 }
 
 @media only screen and (min-width: 1800px) {
-    .main-navbar {
+    .mnbar {
         .container-fluid {
             max-width: 1900px;
             padding-left: 100px;

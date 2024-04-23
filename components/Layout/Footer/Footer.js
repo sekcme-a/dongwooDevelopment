@@ -13,12 +13,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer className="footer-area pt-100">
+      <footer className="dev-footZone pt-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
-                <div className="widget-logo" style={PR}>
+              <div className="dev-footLogo">
+                <div className="dev-logo" style={PR}>
                   <EditButton mode="image"
                     type="footer" item="footer_logoUrl" text="로고 삽입"
                     defaultImg="/images/logo.png"
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
+              <div className="dev-footLogo">
                   <h3>바로가기</h3>
 
                   <ul className={`footer-quick-links ${styles.list_container}`} >
@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
 
             {/* <div className="col-lg-3 col-sm-6">
-              <div className="single-footer-widget ps-5">
+              <div className="dev-footLogo ps-5">
                 <h3>계열사</h3>
 
                 <ul className="quick-links">
@@ -127,7 +127,7 @@ const Footer = () => {
             </div> */}
 
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-footer-widget ps-3">
+              <div className="dev-footLogo ps-3">
                 <h3>Contact Info</h3>
                 <ul className="footer-contact-info">
                   <li style={{position:"relative"}}><span style={{marginRight:"3px"}}>위치:</span> 

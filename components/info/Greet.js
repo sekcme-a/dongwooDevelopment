@@ -9,7 +9,7 @@ const Greet = () => {
   
   return (
     <>
-      <div className="about-area ptb-100">
+      <div className="greetZone ptb-100">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div
@@ -19,9 +19,10 @@ const Greet = () => {
               data-aos-duration="500"
               data-aos-once="true"
             >
-              <div className="about-image">
+              <div className="greetImg">
                 <Image
-                  src={data?.info?.greet_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Fgreet_bgUrl?alt=media&token=d19c87c4-cbfe-4772-a46d-0c9c8fd7f8dc"} alt="프로필 사진"
+                  src={data?.info?.greet_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Fgreet_bgUrl?alt=media&token=d19c87c4-cbfe-4772-a46d-0c9c8fd7f8dc"}
+                  alt="프로필 사진"
                   width={0}
                   height={0}
                   sizes="100vw"
@@ -45,7 +46,7 @@ const Greet = () => {
               data-aos-duration="500"
               data-aos-once="true"
             >
-              <div className="about-content">
+              <div className="greetCon">
                 <span>인사말</span>
                 <h3>
                   {data.info.greet_title ?? "안녕하십니까, 주식회사 동우개발 대표이사 안이재 입니다."}
@@ -73,9 +74,9 @@ const Greet = () => {
           </div>
         </div>
 
-        <div className="about-shape-2">
+        {/* <div className="about-shape-2">
           <img src="/images/about/shape-2.png" alt="동우개발" />
-        </div>
+        </div> */}
       </div>
     </>
   );

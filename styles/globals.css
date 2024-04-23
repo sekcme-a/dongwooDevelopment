@@ -144,7 +144,7 @@ img {
 /*================================================
 Default Btn CSS
 =================================================*/
-.default-btn {
+.dev_mainbutton {
   padding: 15px 30px;
   text-align: center;
   color: var(--white-color) !important;
@@ -163,7 +163,7 @@ Default Btn CSS
   white-space: nowrap;
   letter-spacing: 1px;
 }
-.default-btn:before {
+.dev_mainbutton:before {
   content: "";
   position: absolute;
   top: 0;
@@ -179,13 +179,13 @@ Default Btn CSS
   transform: translateX(-50%) translateY(-5%) scale(0.4);
   transition: transform 0.9s;
 }
-.default-btn i {
+.dev_mainbutton i {
   margin-right: 5px;
 }
-.default-btn:hover {
+.dev_mainbutton:hover {
   color: var(--white-color);
 }
-.default-btn:hover:before {
+.dev_mainbutton:hover:before {
   transition: transform 1s;
   transform: translateX(-45%) translateY(0) scale(1);
   transform-origin: bottom center;
@@ -241,35 +241,35 @@ Default Btn CSS
 /*================================================
 Section Title CSS
 =================================================*/
-.section-title {
+.dev-serviceTitle {
   text-align: center;
   max-width: 620px;
   margin: 0 auto 35px;
 }
-.section-title span {
+.dev-serviceTitle span {
   font-size: var(--font-size);
   color: var(--main-color);
   display: block;
   margin-bottom: 15px;
   font-weight: bold;
 }
-.section-title h2 {
+.dev-serviceTitle h2 {
   margin-bottom: 0;
   font-size: 35px;
   line-height: 1.4;
 }
 
-.section-title-wrap {
+.dev-serviceTitle-wrap {
   margin-bottom: 35px;
 }
-.section-title-wrap span {
+.dev-serviceTitle-wrap span {
   font-size: var(--font-size);
   color: var(--main-color);
   display: block;
   margin-bottom: 12px;
   font-weight: bold;
 }
-.section-title-wrap h2 {
+.dev-serviceTitle-wrap h2 {
   margin-bottom: 0;
   font-size: 35px;
   line-height: 1.4;
@@ -429,7 +429,7 @@ Main Banner Area CSS
   margin-bottom: 0;
   margin-right: 30px;
 }
-.main-banner-content .banner-btn {
+.main-banner-content .dev-banbutton {
   margin-top: 30px;
 }
 
@@ -470,14 +470,14 @@ Main Banner Area CSS
   font-weight: 700;
 }
 
-.main-banner-wrap-area {
+.mbwra {
   background-color: #F9F5F4;
   padding-top: 184px;
   padding-bottom: 100px;
   overflow: hidden;
 }
 
-.main-banner-wrap-content span {
+.mbwrapcon span {
   font-size: var(--font-size);
   color: var(--main-color);
   font-weight: bold;
@@ -487,29 +487,29 @@ Main Banner Area CSS
   padding: 5px 15px;
   border-radius: 30px;
 }
-.main-banner-wrap-content h1 {
+.mbwrapcon h1 {
   font-size: 70px;
   margin-bottom: 10px;
 }
-.main-banner-wrap-content p {
+.mbwrapcon p {
   margin-bottom: 0;
   margin-right: 30px;
 }
-.main-banner-wrap-content .banner-btn {
+.mbwrapcon .dev-banbutton {
   margin-top: 30px;
 }
 
-.main-banner-wrap-image {
+.dev-mbwrimg {
   position: relative;
   z-index: 1;
 }
-.main-banner-wrap-image .banner-wrap-shape-1 {
+.dev-mbwrimg .dev_bwshape {
   position: absolute;
   left: -20px;
   top: 5px;
   z-index: -1;
 }
-.main-banner-wrap-image .banner-wrap-shape-2 {
+.dev-mbwrimg .dev_bwshapetwo {
   position: absolute;
   left: 10px;
   bottom: 30px;
@@ -661,41 +661,41 @@ Features Area CSS
 /*================================================
 About Area CSS
 =================================================*/
-.about-area {
+.greetZone {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
-.about-image {
+.greetImg {
   position: relative;
 }
-.about-image .about-shape-1 {
+.greetImg .about-shape-1 {
   position: absolute;
   top: 5%;
   right: 25%;
   transform: translateY(-5%) translateX(-25%);
 }
 
-.about-content {
+.greetCon {
   margin-left: 25px;
 }
-.about-content span {
+.greetCon span {
   font-size: var(--font-size);
   font-weight: bold;
   display: block;
   margin-bottom: 15px;
   color: var(--main-color);
 }
-.about-content h3 {
+.greetCon h3 {
   font-size: 35px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
-.about-content p {
+.greetCon p {
   margin-bottom: 8px;
 }
-.about-content .about-btn {
+.greetCon .about-btn {
   margin-top: 25px;
 }
 
@@ -706,13 +706,13 @@ About Area CSS
   z-index: -1;
 }
 
-.about-image-wrap {
+.greetImg-wrap {
   position: relative;
   padding-right: 100px;
   padding-bottom: 50px;
   z-index: 1;
 }
-.about-image-wrap img:nth-child(2) {
+.greetImg-wrap img:nth-child(2) {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -720,7 +720,7 @@ About Area CSS
   border-top: 5px solid var(--main-color);
   border-left: 5px solid var(--main-color);
 }
-.about-image-wrap .about-shape-3 {
+.greetImg-wrap .about-shape-3 {
   position: absolute;
   bottom: 70px;
   right: 10px;
@@ -730,7 +730,7 @@ About Area CSS
 /*================================================
 Services Area CSS
 =================================================*/
-.services-area.bg-F9F5F4 {
+.devserzone.bg-F9F5F4 {
   background-color: #F9F5F4;
 }
 
@@ -788,7 +788,7 @@ Services Area CSS
 .single-services-card h3 a {
   color: var(--black-color);
 }
-.single-services-card .services-btn {
+.single-services-card .dev-serButton {
   font-size: var(--font-size);
   font-weight: 500;
   color: var(--main-color);
@@ -812,12 +812,12 @@ Services Area CSS
 .single-services-card:hover p {
   color: var(--white-color);
 }
-.single-services-card:hover .services-btn {
+.single-services-card:hover .dev-serButton {
   color: var(--white-color);
   letter-spacing: 1px;
 }
 
-.single-services-box {
+.dev-serSinbox {
   margin-bottom: 25px;
   background-color: var(--white-color);
   box-shadow: -13px 8px 32px rgba(217, 35, 12, 0.04);
@@ -829,7 +829,7 @@ Services Area CSS
   transition: var(--transition);
   border: 1px solid #eeeeee;
 }
-.single-services-box::before {
+.dev-serSinbox::before {
   content: "";
   position: absolute;
   left: 0;
@@ -844,10 +844,10 @@ Services Area CSS
   border-radius: 50%;
   transform: scale(1.5);
 }
-.single-services-box .icon {
+.dev-serSinbox .icon {
   margin-bottom: 20px;
 }
-.single-services-box .icon i {
+.dev-serSinbox .icon i {
   display: inline-block;
   height: 80px;
   width: 80px;
@@ -858,23 +858,23 @@ Services Area CSS
   text-align: center;
   font-size: 35px;
 }
-.single-services-box h3 {
+.dev-serSinbox h3 {
   font-size: 24px;
   margin-bottom: 15px;
 }
-.single-services-box h3 a {
+.dev-serSinbox h3 a {
   color: var(--black-color);
 }
-.single-services-box .services-btn {
+.dev-serSinbox .dev-serButton {
   font-size: var(--font-size);
   font-weight: 500;
   color: var(--main-color);
   transition: var(--transition);
 }
-.single-services-box p {
+.dev-serSinbox p {
   transition: var(--transition);
 }
-.single-services-box .back-icon {
+.dev-serSinbox .back-icon {
   position: absolute;
   right: 5px;
   top: -10px;
@@ -882,22 +882,22 @@ Services Area CSS
   color: #5BCC96;
   opacity: 5%;
 }
-.single-services-box:hover {
+.dev-serSinbox:hover {
   transform: translateY(-5px);
 }
-.single-services-box:hover::before {
+.dev-serSinbox:hover::before {
   opacity: 1;
   visibility: visible;
   width: 100%;
   height: 100%;
 }
-.single-services-box:hover h3 a {
+.dev-serSinbox:hover h3 a {
   color: var(--white-color);
 }
-.single-services-box:hover p {
+.dev-serSinbox:hover p {
   color: var(--white-color);
 }
-.single-services-box:hover .services-btn {
+.dev-serSinbox:hover .dev-serButton {
   color: var(--white-color);
   letter-spacing: 1px;
 }
@@ -905,7 +905,7 @@ Services Area CSS
 /*================================================
 Funfact Area CSS
 =================================================*/
-.fun-fact-area {
+.dev-scrollZone {
   background-image: url(/images/funfact/funfact-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -914,16 +914,16 @@ Funfact Area CSS
   z-index: 1;
   overflow: hidden;
 }
-.fun-fact-area .col-lg-3:last-child .single-funfact-card::before {
+.dev-scrollZone .col-lg-3:last-child .single-funfact-card::before {
   display: none;
 }
-.fun-fact-area.bg-two {
+.dev-scrollZone.bg-two {
   background-image: url(/images/funfact/funfact-bg-2.jpg);
 }
-.fun-fact-area.bg-three {
+.dev-scrollZone.bg-three {
   background-image: url(/images/funfact/funfact-bg-3.jpg);
 }
-.fun-fact-area.bg-three .section-title h2 {
+.dev-scrollZone.bg-three .dev-serviceTitle h2 {
   color: var(--white-color);
 }
 
@@ -968,7 +968,7 @@ Funfact Area CSS
   transform: translateY(-10%);
 }
 
-.single-funfact-box {
+.dev-scroll-box {
   background-color: var(--white-color);
   margin-bottom: 25px;
   text-align: center;
@@ -978,7 +978,7 @@ Funfact Area CSS
   overflow: hidden;
   transition: var(--transition);
 }
-.single-funfact-box::before {
+.dev-scroll-box::before {
   content: "";
   position: absolute;
   left: 0;
@@ -993,48 +993,48 @@ Funfact Area CSS
   border-radius: 50%;
   transform: scale(1.5);
 }
-.single-funfact-box .icon {
+.dev-scroll-box .icon {
   margin-bottom: 10px;
 }
-.single-funfact-box .icon i {
+.dev-scroll-box .icon i {
   font-size: 50px;
   color: var(--main-color);
   transition: var(--transition);
 }
-.single-funfact-box h3 {
+.dev-scroll-box h3 {
   font-size: 45px;
   margin-bottom: 8px;
   transition: var(--transition);
 }
-.single-funfact-box h3 .small-text {
+.dev-scroll-box h3 .small-text {
   font-size: 45px;
   position: relative;
   left: -5px;
   transition: var(--transition);
 }
-.single-funfact-box p {
+.dev-scroll-box p {
   margin-bottom: 0;
   transition: var(--transition);
 }
-.single-funfact-box:hover {
+.dev-scroll-box:hover {
   transform: translateY(-5px);
 }
-.single-funfact-box:hover::before {
+.dev-scroll-box:hover::before {
   opacity: 1;
   visibility: visible;
   width: 100%;
   height: 100%;
 }
-.single-funfact-box:hover .icon i {
+.dev-scroll-box:hover .icon i {
   color: var(--white-color);
 }
-.single-funfact-box:hover h3 {
+.dev-scroll-box:hover h3 {
   color: var(--white-color);
 }
-.single-funfact-box:hover h3 .small-text {
+.dev-scroll-box:hover h3 .small-text {
   color: var(--white-color);
 }
-.single-funfact-box:hover p {
+.dev-scroll-box:hover p {
   color: var(--white-color);
 }
 
@@ -1046,13 +1046,13 @@ Case Study Area CSS
   position: relative;
   z-index: 1;
 }
-.case-study-area .section-title-wrap {
+.case-study-area .dev-serviceTitle-wrap {
   margin-bottom: 35px;
 }
-.case-study-area .section-title-wrap span {
+.case-study-area .dev-serviceTitle-wrap span {
   color: var(--main-color);
 }
-.case-study-area .section-title-wrap h2 {
+.case-study-area .dev-serviceTitle-wrap h2 {
   color: var(--white-color);
 }
 .case-study-area::before {
@@ -1322,74 +1322,74 @@ Preloader Area CSS
 /*================================================
 Why Choose Us Area CSS
 =================================================*/
-.why-choose-us-area {
+.dev-ourZone {
   overflow: hidden;
 }
 
-.why-choose-us-content span {
+.dev-over-con span {
   font-size: var(--font-size);
   color: var(--main-color);
   font-weight: bold;
   display: block;
   margin-bottom: 12px;
 }
-.why-choose-us-content h3 {
+.dev-over-con h3 {
   font-size: 35px;
   margin-bottom: 15px;
   line-height: 1.4;
 }
-.why-choose-us-content p {
+.dev-over-con p {
   margin-bottom: 0;
 }
-.why-choose-us-content .choose-us-inner-box {
+.dev-over-con .overview-box {
   position: relative;
   margin-top: 25px;
   padding-left: 75px;
 }
-.why-choose-us-content .choose-us-inner-box .icon {
+.dev-over-con .overview-box .icon {
   position: absolute;
   left: 0;
   top: 0;
 }
-.why-choose-us-content .choose-us-inner-box .icon i {
+.dev-over-con .overview-box .icon i {
   font-size: 55px;
   color: var(--main-color);
 }
-.why-choose-us-content .choose-us-inner-box h4 {
+.dev-over-con .overview-box h4 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.why-choose-us-content .choose-us-inner-box p {
+.dev-over-con .overview-box p {
   margin-bottom: 0;
 }
-.why-choose-us-content.wrap-color {
+.dev-over-con.wrap-color {
   background-color: var(--white-color);
   padding: 45px;
   border-radius: 5px;
 }
-.why-choose-us-content .inner-box-content {
+.dev-over-con .inner-box-content {
   position: relative;
   margin-top: 25px;
   padding-left: 75px;
 }
-.why-choose-us-content .inner-box-content .icon {
+.dev-over-con .inner-box-content .icon {
   position: absolute;
   left: 0;
   top: 0;
 }
-.why-choose-us-content .inner-box-content .icon i {
+.dev-over-con .inner-box-content .icon i {
   font-size: 55px;
   color: var(--main-color);
 }
-.why-choose-us-content .inner-box-content h4 {
+.dev-over-con .inner-box-content h4 {
   font-size: 24px;
   margin-bottom: 12px;
 }
-.why-choose-us-content .inner-box-content p {
+.dev-over-con .inner-box-content p {
   margin-bottom: 0;
 }
 
-.why-choose-us-image {
+.overviewImg {
   position: relative;
   z-index: 1;
   padding-top: 30px;
@@ -1397,7 +1397,7 @@ Why Choose Us Area CSS
   padding-right: 30px;
   margin-left: 20px;
 }
-.why-choose-us-image::before {
+.overviewImg::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -1407,13 +1407,13 @@ Why Choose Us Area CSS
   background: var(--gradient-color);
   z-index: -1;
 }
-.why-choose-us-image .why-choose-us-shape-1 {
+.overviewImg .why-choose-us-shape-1 {
   position: absolute;
   left: -25px;
   bottom: 15px;
 }
 
-.why-choose-us-area-with-video {
+.dev-ourZone-with-video {
   background-image: url(/images/why-choose-us/why-choose-us-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -1422,7 +1422,7 @@ Why Choose Us Area CSS
   z-index: 1;
   overflow: hidden;
 }
-.why-choose-us-area-with-video::before {
+.dev-ourZone-with-video::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -1709,7 +1709,7 @@ Expertise Area CSS
   overflow: hidden;
 }
 
-.expertise-area-with-white-color {
+.dev-expawwc {
   overflow: hidden;
 }
 
@@ -1733,68 +1733,68 @@ Expertise Area CSS
   transform: translateY(-35%) translateX(-20%);
 }
 
-.expertise-content {
+.dev-expcon {
   position: relative;
   margin-top: -30px;
 }
-.expertise-content span {
+.dev-expcon span {
   font-size: var(--font-size);
   font-weight: bold;
   color: var(--main-color);
   display: block;
   margin-bottom: 15px;
 }
-.expertise-content h3 {
+.dev-expcon h3 {
   font-size: 35px;
   color: var(--white-color);
   margin-bottom: 15px;
   line-height: 1.4;
 }
-.expertise-content p {
+.dev-expcon p {
   color: var(--white-color);
 }
-.expertise-content .expertise-inner-box {
+.dev-expcon .expertise-inner-box {
   position: relative;
   margin-top: 25px;
   padding-left: 75px;
 }
-.expertise-content .expertise-inner-box .icon {
+.dev-expcon .expertise-inner-box .icon {
   position: absolute;
   left: 0;
   top: 0;
 }
-.expertise-content .expertise-inner-box .icon i {
+.dev-expcon .expertise-inner-box .icon i {
   font-size: 55px;
   color: var(--main-color);
 }
-.expertise-content .expertise-inner-box h4 {
+.dev-expcon .expertise-inner-box h4 {
   font-size: 24px;
   margin-bottom: 12px;
   color: var(--white-color);
 }
-.expertise-content .expertise-inner-box p {
+.dev-expcon .expertise-inner-box p {
   margin-bottom: 0;
 }
-.expertise-content.black-color {
+.dev-expcon.black-color {
   margin-top: 0;
 }
-.expertise-content.black-color h3 {
+.dev-expcon.black-color h3 {
   color: var(--black-color);
 }
-.expertise-content.black-color p {
+.dev-expcon.black-color p {
   color: var(--paragraph-color);
 }
-.expertise-content.black-color .expertise-inner-box h4 {
+.dev-expcon.black-color .expertise-inner-box h4 {
   color: var(--black-color);
 }
-.expertise-content.black-color .expertise-inner-box p {
+.dev-expcon.black-color .expertise-inner-box p {
   color: var(--paragraph-color);
 }
 
-.expertise-image-wrap {
+.dev-expimgw {
   position: relative;
 }
-.expertise-image-wrap .expertise-shape-2 {
+.dev-expimgw .expertise-shape-2 {
   position: absolute;
   top: 10%;
   right: 40%;
@@ -2128,10 +2128,10 @@ Team Area CSS
   bottom: 0;
   z-index: -1;
 }
-.team-area .section-title {
+.team-area .dev-serviceTitle {
   max-width: 565px;
 }
-.team-area .section-title h2 {
+.team-area .dev-serviceTitle h2 {
   color: var(--white-color);
 }
 
@@ -2272,16 +2272,16 @@ Pricing Area CSS
 .single-pricing-table.active .pricing-btn {
   text-align: center;
 }
-.single-pricing-table.active .pricing-btn .default-btn {
+.single-pricing-table.active .pricing-btn .dev_mainbutton {
   width: 100%;
   background: var(--gradient-color);
   border: 1px solid var(--main-color);
   color: var(--white-color) !important;
 }
-.single-pricing-table.active .pricing-btn .default-btn::before {
+.single-pricing-table.active .pricing-btn .dev_mainbutton::before {
   background: var(--gradient-color);
 }
-.single-pricing-table.active .pricing-btn .default-btn:hover {
+.single-pricing-table.active .pricing-btn .dev_mainbutton:hover {
   color: var(--white-color) !important;
 }
 .single-pricing-table .pricing-header h3 {
@@ -2320,16 +2320,16 @@ Pricing Area CSS
 .single-pricing-table .pricing-btn {
   text-align: center;
 }
-.single-pricing-table .pricing-btn .default-btn {
+.single-pricing-table .pricing-btn .dev_mainbutton {
   width: 100%;
   background: transparent;
   border: 1px solid var(--main-color);
   color: var(--main-color) !important;
 }
-.single-pricing-table .pricing-btn .default-btn::before {
+.single-pricing-table .pricing-btn .dev_mainbutton::before {
   background: var(--gradient-color);
 }
-.single-pricing-table .pricing-btn .default-btn:hover {
+.single-pricing-table .pricing-btn .dev_mainbutton:hover {
   color: var(--white-color) !important;
 }
 .single-pricing-table .pricing-btn span {
@@ -2509,7 +2509,7 @@ Working Process Area CSS
 .working-process-area {
   background-color: #F9F5F4;
 }
-.working-process-area .section-title {
+.working-process-area .dev-serviceTitle {
   max-width: 650px;
 }
 .working-process-area .row {
@@ -2708,7 +2708,7 @@ Contact Form Area CSS
 .contact-form .send-btn {
   margin-top: 25px;
 }
-.contact-form .send-btn .default-btn {
+.contact-form .send-btn .dev_mainbutton {
   border: none;
 }
 .contact-form .form-check {
@@ -2892,7 +2892,7 @@ Login Area CSS
 .login-form form .lost-your-password-wrap a:hover::after {
   width: 100%;
 }
-.login-form form .default-btn {
+.login-form form .dev_mainbutton {
   border: none;
   margin-top: 25px;
 }
@@ -2989,7 +2989,7 @@ Register Area CSS
   font-style: italic;
   margin-bottom: 0;
 }
-.register-form form .default-btn {
+.register-form form .dev_mainbutton {
   border: none;
   margin-top: 25px;
 }
@@ -3068,7 +3068,7 @@ Forgot Password Area CSS
   color: transparent;
   transition: var(--transition);
 }
-.forgot-password-form form .default-btn {
+.forgot-password-form form .dev_mainbutton {
   border: none;
 }
 
@@ -3195,7 +3195,7 @@ Privacy Policy Area CSS
   max-width: 550px;
   margin: auto;
 }
-.error-content .default-btn {
+.error-content .dev_mainbutton {
   margin-top: 25px;
 }
 
@@ -3298,11 +3298,11 @@ Coming Soon Area CSS
   color: transparent;
   transition: var(--transition);
 }
-.coming-soon-content form .default-btn {
+.coming-soon-content form .dev_mainbutton {
   width: 100%;
   border: none;
 }
-.coming-soon-content form .default-btn::before {
+.coming-soon-content form .dev_mainbutton::before {
   width: 850px;
   height: 850px;
 }
@@ -3795,7 +3795,7 @@ Blog Details Area CSS
 .blog-details-desc .article-leave-comment .form-cookies-consent p:last-child {
   margin-right: 0;
 }
-.blog-details-desc .article-leave-comment .default-btn {
+.blog-details-desc .article-leave-comment .dev_mainbutton {
   border: none;
 }
 
@@ -4272,7 +4272,7 @@ Buy Now Btn
   margin-top: 40px;
   position: relative;
 }
-.cta-area .cta-btn-box .default-btn {
+.cta-area .cta-btn-box .dev_mainbutton {
   padding: 15px 35px;
   font-size: 18px;
   font-weight: 600;

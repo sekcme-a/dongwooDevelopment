@@ -1,13 +1,13 @@
 /*================================================
 Footer Area CSS
 =================================================*/
-.footer-area {
+.dev-footZone {
     background-color: var(--black-color);
 }
-.single-footer-widget {
+.dev-footLogo {
     margin-bottom: 25px;
 
-    .widget-logo {
+    .dev-logo {
         margin-bottom: 25px;
     }
     p {
@@ -150,7 +150,7 @@ Footer Area CSS
 
 // Responsive CSS
 @media only screen and (max-width: 767px) {
-    .single-footer-widget {
+    .dev-footLogo {
         &.ps-5 {
             padding-left: 0 !important;
         }
@@ -197,7 +197,7 @@ Footer Area CSS
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single-footer-widget {
+    .dev-footLogo {
         &.ps-5 {
             padding-left: 0 !important;
         }
@@ -240,7 +240,7 @@ Footer Area CSS
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .single-footer-widget {
+    .dev-footLogo {
         &.ps-5 {
             padding-left: 0 !important;
         }
@@ -274,7 +274,7 @@ Footer Area CSS
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .single-footer-widget {
+    .dev-footLogo {
         &.ps-5 {
             padding-left: 0 !important;
         }

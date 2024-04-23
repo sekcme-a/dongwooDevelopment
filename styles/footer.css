@@ -1,34 +1,34 @@
 /*================================================
 Footer Area CSS
 =================================================*/
-.footer-area {
+.dev-footZone {
   background-color: var(--black-color);
 }
 
-.single-footer-widget {
+.dev-footLogo {
   margin-bottom: 25px;
 }
-.single-footer-widget .widget-logo {
+.dev-footLogo .dev-logo {
   margin-bottom: 25px;
 }
-.single-footer-widget p {
+.dev-footLogo p {
   margin-bottom: 0;
   color: var(--white-color);
 }
-.single-footer-widget .widget-social {
+.dev-footLogo .widget-social {
   padding: 0;
   margin-bottom: 0;
   margin-top: 20px;
 }
-.single-footer-widget .widget-social li {
+.dev-footLogo .widget-social li {
   display: inline-block;
   list-style-type: none;
   margin-right: 5px;
 }
-.single-footer-widget .widget-social li:last-child {
+.dev-footLogo .widget-social li:last-child {
   margin-right: 0;
 }
-.single-footer-widget .widget-social li a i {
+.dev-footLogo .widget-social li a i {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -41,19 +41,19 @@ Footer Area CSS
   border-radius: 50px;
   transition: var(--transition);
 }
-.single-footer-widget .widget-social li a i:hover {
+.dev-footLogo .widget-social li a i:hover {
   color: var(--white-color);
   background-color: var(--main-color);
   transform: translateY(-5px);
 }
-.single-footer-widget h3 {
+.dev-footLogo h3 {
   font-size: 24px;
   margin-bottom: 25px;
   color: var(--white-color);
   position: relative;
   padding-bottom: 5px;
 }
-.single-footer-widget h3::before {
+.dev-footLogo h3::before {
   content: "";
   position: absolute;
   left: 0;
@@ -62,48 +62,48 @@ Footer Area CSS
   height: 1px;
   background-color: var(--main-color);
 }
-.single-footer-widget .quick-links {
+.dev-footLogo .quick-links {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
-.single-footer-widget .quick-links li {
+.dev-footLogo .quick-links li {
   color: var(--white-color);
   font-size: var(--font-size);
   margin-bottom: 15px;
 }
-.single-footer-widget .quick-links li a {
+.dev-footLogo .quick-links li a {
   display: inline-block;
   color: var(--white-color);
   font-size: var(--font-size);
 }
-.single-footer-widget .quick-links li a:hover {
+.dev-footLogo .quick-links li a:hover {
   color: var(--main-color);
 }
-.single-footer-widget .quick-links li:last-child {
+.dev-footLogo .quick-links li:last-child {
   margin-bottom: 0;
 }
-.single-footer-widget .footer-information {
+.dev-footLogo .footer-information {
   padding: 0;
   margin-bottom: 0;
 }
-.single-footer-widget .footer-information li {
+.dev-footLogo .footer-information li {
   list-style-type: none;
   margin-bottom: 15px;
   color: var(--white-color);
   position: relative;
   padding-left: 25px;
 }
-.single-footer-widget .footer-information li a {
+.dev-footLogo .footer-information li a {
   color: var(--white-color);
 }
-.single-footer-widget .footer-information li a:hover {
+.dev-footLogo .footer-information li a:hover {
   color: var(--main-color);
 }
-.single-footer-widget .footer-information li:last-child {
+.dev-footLogo .footer-information li:last-child {
   margin-bottom: 0;
 }
-.single-footer-widget .footer-information li i {
+.dev-footLogo .footer-information li i {
   font-size: 18px;
   color: var(--main-color);
   position: absolute;
@@ -145,7 +145,7 @@ Footer Area CSS
   margin-bottom: 0;
   margin-top: -12px;
 }
-.single-footer-widget .footer-quick-links li {
+.dev-footLogo .footer-quick-links li {
   -ms-flex: 0 0 50%;
   -webkit-box-flex: 0;
   flex: 0 0 50%;
@@ -155,37 +155,37 @@ Footer Area CSS
   padding-top: 12px;
 }
 
-.single-footer-widget .footer-quick-links li a {
+.dev-footLogo .footer-quick-links li a {
   display: inline-block;
   color: #ebe7e7;
   text-transform: uppercase;
   font-size: 14px;
 }
-.single-footer-widget .footer-quick-links li a:hover {
+.dev-footLogo .footer-quick-links li a:hover {
   color:  var(--main-color);
 }
 
 @media only screen and (max-width: 767px) {
-  .single-footer-widget.ps-5 {
+  .dev-footLogo.ps-5 {
     padding-left: 0 !important;
   }
-  .single-footer-widget.ps-3 {
+  .dev-footLogo.ps-3 {
     padding-left: 0 !important;
   }
-  .single-footer-widget h3 {
+  .dev-footLogo h3 {
     font-size: 20px;
   }
-  .single-footer-widget .quick-links li a {
+  .dev-footLogo .quick-links li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li {
+  .dev-footLogo .footer-information li {
     font-size: 15px;
     padding-left: 22px;
   }
-  .single-footer-widget .footer-information li a {
+  .dev-footLogo .footer-information li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li i {
+  .dev-footLogo .footer-information li i {
     font-size: 15px;
   }
   .copyright-area {
@@ -196,26 +196,26 @@ Footer Area CSS
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .single-footer-widget.ps-5 {
+  .dev-footLogo.ps-5 {
     padding-left: 0 !important;
   }
-  .single-footer-widget.ps-3 {
+  .dev-footLogo.ps-3 {
     padding-left: 0 !important;
   }
-  .single-footer-widget h3 {
+  .dev-footLogo h3 {
     font-size: 20px;
   }
-  .single-footer-widget .quick-links li a {
+  .dev-footLogo .quick-links li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li {
+  .dev-footLogo .footer-information li {
     font-size: 15px;
     padding-left: 22px;
   }
-  .single-footer-widget .footer-information li a {
+  .dev-footLogo .footer-information li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li i {
+  .dev-footLogo .footer-information li i {
     font-size: 15px;
   }
   .copyright-area {
@@ -226,50 +226,50 @@ Footer Area CSS
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .single-footer-widget.ps-5 {
+  .dev-footLogo.ps-5 {
     padding-left: 0 !important;
   }
-  .single-footer-widget.ps-3 {
+  .dev-footLogo.ps-3 {
     padding-left: 0 !important;
   }
-  .single-footer-widget h3 {
+  .dev-footLogo h3 {
     font-size: 20px;
   }
-  .single-footer-widget .quick-links li a {
+  .dev-footLogo .quick-links li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li {
+  .dev-footLogo .footer-information li {
     font-size: 15px;
     padding-left: 22px;
   }
-  .single-footer-widget .footer-information li a {
+  .dev-footLogo .footer-information li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li i {
+  .dev-footLogo .footer-information li i {
     font-size: 15px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .single-footer-widget.ps-5 {
+  .dev-footLogo.ps-5 {
     padding-left: 0 !important;
   }
-  .single-footer-widget.ps-3 {
+  .dev-footLogo.ps-3 {
     padding-left: 0 !important;
   }
-  .single-footer-widget h3 {
+  .dev-footLogo h3 {
     font-size: 20px;
   }
-  .single-footer-widget .quick-links li a {
+  .dev-footLogo .quick-links li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li {
+  .dev-footLogo .footer-information li {
     font-size: 15px;
     padding-left: 22px;
   }
-  .single-footer-widget .footer-information li a {
+  .dev-footLogo .footer-information li a {
     font-size: 15px;
   }
-  .single-footer-widget .footer-information li i {
+  .dev-footLogo .footer-information li i {
     font-size: 15px;
   }
 }/*# sourceMappingURL=footer.css.map */
@@ -278,31 +278,31 @@ Footer Area CSS
 
 
 
-.single-footer-widget .footer-contact-info {
+.dev-footLogo .footer-contact-info {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 0;
 }
 
-.single-footer-widget .footer-contact-info li {
+.dev-footLogo .footer-contact-info li {
   color: #ebe7e7;
   font-size: 15px;
   margin-bottom: 12px;
 }
 
-.single-footer-widget .footer-contact-info li span {
+.dev-footLogo .footer-contact-info li span {
   display: inline-block;
   font-weight: 700;
   color: #ffffff;
 }
 
-.single-footer-widget .footer-contact-info li a {
+.dev-footLogo .footer-contact-info li a {
   display: inline-block;
   color: #ffffff;
   position: relative;
 }
 
-.single-footer-widget .footer-contact-info li a::before {
+.dev-footLogo .footer-contact-info li a::before {
   width: 100%;
   height: 1px;
   background-color: #329411;
@@ -316,15 +316,15 @@ Footer Area CSS
   transition: 0.5s;
 }
 
-.single-footer-widget .footer-contact-info li a:hover {
+.dev-footLogo .footer-contact-info li a:hover {
   color: #329411;
 }
 
-.single-footer-widget .footer-contact-info li:last-child {
+.dev-footLogo .footer-contact-info li:last-child {
   margin-bottom: 0;
 }
 
-.single-footer-widget .footer-contact-info li:last-child a::before {
+.dev-footLogo .footer-contact-info li:last-child a::before {
   opacity: 1;
   visibility: visible;
 }

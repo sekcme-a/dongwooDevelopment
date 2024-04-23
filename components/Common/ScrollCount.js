@@ -15,9 +15,9 @@ const ScrollCount = () => {
 
   return (
     <>
-      <div className="fun-fact-area bg-three pt-100 pb-75">
+      <div className="dev-scrollZone bg-three pt-100 pb-75">
         <div className="container">
-          <div className="section-title">
+          <div className="dev-serviceTitle">
             <span>관리 현황</span>
             <h2 style={{position:"relative", color:"black"}}>
               {console.log(data.main)}
@@ -28,7 +28,7 @@ const ScrollCount = () => {
 
           <div className="row justify-content-center">
             <div className="col-lg-4 col-sm-6">
-              <div className="single-funfact-box">
+              <div className="dev-scroll-box">
                 <div className="icon">
                   <i className="ri-building-2-line"></i>
                 </div>
@@ -42,7 +42,7 @@ const ScrollCount = () => {
             </div>
 
             <div className="col-lg-4 col-sm-6">
-              <div className="single-funfact-box">
+              <div className="dev-scroll-box">
                 <div className="icon">
                   <i className="ri-building-3-line"></i>
                 </div>
@@ -56,7 +56,7 @@ const ScrollCount = () => {
             </div>
 
             <div className="col-lg-4 col-sm-6">
-              <div className="single-funfact-box" >
+              <div className="dev-scroll-box" >
                 <div className="icon">
                   <i className="ri-global-line"></i>
                 </div>

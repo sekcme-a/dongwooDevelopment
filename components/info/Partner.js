@@ -38,7 +38,7 @@ const Partner = () => {
     <>
       <div className="team-area-without-color pt-100 pb-75">
         <div className="container">
-          <div className="section-title">
+          <div className="dev-serviceTitle">
             <span>협력사 | Partner Company</span>
             <h2>동우개발의 협력사를 소개합니다.</h2>
           </div>

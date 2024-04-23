@@ -21,7 +21,7 @@ export default function Custom404() {
               changed or is temporarily unavailable.
             </p>
             <Link href="/">
-              <a className="default-btn">Back to Homepage</a>
+              <a className="dev_mainbutton">Back to Homepage</a>
             </Link>
           </div>
         </div>
