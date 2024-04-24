@@ -71,7 +71,7 @@ const MainBanner = () => {
                 className="dev-mbwrimg"
               >
                 {/* 839*1080 */}
-                <Image
+                <img
                   src={data.main.mainBanner_bannerBg ?? "/images/main-banner/banner.png"} alt="동우개발 이미지" 
                   width={700}
                   height={900}
@@ -82,7 +82,7 @@ const MainBanner = () => {
                 <div
                   className="dev_bwshape"
                 >
-                  <Image
+                  <img
                     src="/images/main-banner/shape-1.png"
                     alt="패턴"
                     data-aos="fade-down"
@@ -101,7 +101,7 @@ const MainBanner = () => {
                   className="dev_bwshapetwo"
                 >
                   
-                  <Image
+                  <img
                     src="/images/main-banner/shape-2.png"
                     alt="패턴2"
                     data-aos="fade-up"

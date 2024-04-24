@@ -55,7 +55,7 @@ const One = () => {
         <EditButton type="major" item="three_text2" text="텍스트"  />
       </motion.h3>
       <motion.div className={styles.image_container} ref={inViewRef} {...initial(0,0,50)} animate={ani1}>
-        <Image src={fetchedData.three_imgUrl} alt="부동산자산관리" width={800} height={500} objectFit="contain" loading="lazy"/>
+        <img src={fetchedData.three_imgUrl} alt="부동산자산관리" width={800} height={500} objectFit="contain" loading="lazy"/>
         <EditButton type="major" item="three_imgUrl" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20220512/446fb2e11de64.jpg"/>
       </motion.div>
     </div>

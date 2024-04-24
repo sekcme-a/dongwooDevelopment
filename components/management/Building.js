@@ -78,7 +78,7 @@ const Building = () => {
           <Grid item key={index} xs={12} md={6} lg={4}>
             <motion.div className={styles.item_container} {...initial(0,0,20)} {...sequentialAnimate(index)} >
             <div style={{ width: '300px', height: '200px', border: '2px solid green',  borderRadius:"5px", overflow:"hidden", position:"relative"}}>
-              <Image src={item.imgUrl} alt={item.title} layout="fill" loading="lazy"/> 
+              <img src={item.imgUrl} alt={item.title} layout="fill" loading="lazy"/> 
             </div>
               <h4>{item.title}</h4>
               <p>{item.text}</p>

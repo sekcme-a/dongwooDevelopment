@@ -24,7 +24,7 @@ const OurExpertise = () => {
                 data-aos-once="true"
               >
                 {/* 1080*976 */}
-                <Image 
+                <img 
                   src={data.main.aboutUs_img ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Fmain%2FaboutUs_img?alt=media&token=b3537b00-4359-44c3-ae7c-f0ffb10ab7da"}
                   alt="about us" 
                   width={500} height={450} objectFit="contain"

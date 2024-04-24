@@ -20,7 +20,7 @@ const Greet = () => {
               data-aos-once="true"
             >
               <div className="greetImg">
-                <Image
+                <img
                   src={data?.info?.greet_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Fgreet_bgUrl?alt=media&token=d19c87c4-cbfe-4772-a46d-0c9c8fd7f8dc"}
                   alt="프로필 사진"
                   width={0}

@@ -31,7 +31,7 @@ const PageBanner = ({ title, homeText,subtitle,  homeUrl }) => {
     <>
       <div className="page-banner-area" style={{position:"relative", height:"400px"}}>
         <div style={{position:"absolute", top: 0, left: 0, width:"100%", height:"100%", backgroundColor:"#1a0602", opacity:.6}} />
-        <Image style={{position:"absolute", top: 0, left: 0, width:"100%", height:"100%", zIndex:-1, objectFit:"cover" }} layout="fill" objectFit="cover" quality={10} src="/images/banner_bg.jpg" />
+        <img style={{position:"absolute", top: 0, left: 0, width:"100%", height:"100%", zIndex:-1, objectFit:"cover" }} layout="fill" objectFit="cover" quality={10} src="/images/banner_bg.jpg" />
         {/* <div className="container"  >
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-6">

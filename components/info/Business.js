@@ -16,7 +16,7 @@ const Business = () => {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-4 col-md-12" style={PR}>
               {/* 585*600 */}
-                <Image
+                <img
                   src={data?.info?.business_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Fbusiness_bgUrl?alt=media&token=eed7d5ce-e2c4-42cd-878a-9f5c5fb9b43b"}
                   alt="management"
                   data-aos="fade-down"
