@@ -36,6 +36,10 @@
   }
 }
 @media screen and (max-width:900px) {
+  .image_container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
   .main_container h3{
     width: 100% !important;
   }
@@ -50,9 +54,9 @@
     margin: 20px 15px;
   }
   .main_container h2{
-    font-size: 15px;
+    font-size: 13px;
   }
   .main_container h3{
-    font-size: 15px;
+    font-size: 12px;
   }
 }

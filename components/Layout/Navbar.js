@@ -34,7 +34,7 @@ const NavbarStyle2 = () => {
               <Link href="/">
                 <a className="navbar-brand">
                  
-                  <img
+                  <Image
                     src="/images/logo.png"
                     alt="동우개발 로고"
                     width={180} height={50}

@@ -1,8 +1,11 @@
 import React,{useState, useEffect} from "react";
 import Link from 'next/link';
 import Image from "next/image";
+import EditButton from "components/admin/EditButton";
+import useData from "context/data";
 
 const PageBanner = ({ title, homeText,subtitle,  homeUrl }) => {
+  const {data} = useData()
 
   const [isMobile, setIsMobile] = useState(false)
 
@@ -31,7 +34,15 @@ const PageBanner = ({ title, homeText,subtitle,  homeUrl }) => {
     <>
       <div className="page-banner-area" style={{position:"relative", height:"400px"}}>
         <div style={{position:"absolute", top: 0, left: 0, width:"100%", height:"100%", backgroundColor:"#1a0602", opacity:.6}} />
-        <img style={{position:"absolute", top: 0, left: 0, width:"100%", height:"100%", zIndex:-1, objectFit:"cover" }} layout="fill" objectFit="cover" quality={10} src="/images/banner_bg.jpg" />
+        <Image style={{position:"absolute", top: 0, left: 0, width:"100%", height:"100%", zIndex:-1, objectFit:"cover" }}
+          layout="fill" objectFit="cover" quality={10} src={data.main.dwdev_bannerBg ?? "/images/banner_bg.jpg" }
+          alt="배너 이미지"
+        />
+
+        <EditButton
+          type="main" item="dwdev_bannerBg" text="배경이미지 삽입" mode="image" defaultImg="/images/banner_bg.jpg" 
+          style={{position:"absolute", top: 150, right: 100}}
+        />
         {/* <div className="container"  >
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-6">

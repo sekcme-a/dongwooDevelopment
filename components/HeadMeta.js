@@ -24,7 +24,7 @@ const HeadMeta = ({ title, description, url }) => {
       <meta property="og:site_name" content="동우개발" />
       <meta name="keywords" content="동우개발,동우그룹,(주)동우개발,동우"/>
       <meta property="og:article:author" content="동우개발" />
-      <link rel="canonical" href={url||"https://xn--2i0bm5iryeh7q.kr"} />
+      <link rel="canonical" href={url||"https://xn--h49at0mlnhpml.kr/"} />
     </Head>
   );
 };

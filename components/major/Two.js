@@ -28,6 +28,7 @@ const One = () => {
 
   useEffect(() => {
     if(data?.major?.fetched){
+      console.log(data.major)
       setFetchedData({
         ...data.major
       })
@@ -55,7 +56,8 @@ const One = () => {
         <EditButton type="major" item="two_text2" text="텍스트"  />
       </motion.h3>
       <motion.div className={styles.image_container} ref={inViewRef} {...initial(0,0,50)} animate={ani1}>
-        <img src={fetchedData.two_imgUrl} alt="부동산자산관리" width={800} height={800} objectFit="contain" loading="lazy"/>
+        {console.log(fetchedData.two_imgUrl)}
+        <img src={fetchedData.two_imgUrl} alt="시설 관리 서비스" style={{width: "100%"}}/>
         <EditButton type="major" item="two_imgUrl" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20220512/446fb2e11de64.jpg"/>
       </motion.div>
     </div>

@@ -59,7 +59,7 @@ const Security = () => {
         <EditButton type="management" item="landscape_text1" text="텍스트"  />
       </motion.h6>
       <div style={{display:"flex", justifyContent:"center"}}>
-        <motion.img {...initial(0,0,30)} animate={ani2} ref={inViewRef2} src={data.management.landscape_imgUrl1} alt="이미지1" style={{position:"relative"}}/>
+        <motion.img {...initial(0,0,30)} animate={ani2} ref={inViewRef2} src={data.management.landscape_imgUrl1} alt="조경,미화관리" style={{position:"relative"}}/>
       </div>
       <div style={{position:"relative"}}>
         <EditButton type="management" item="landscape_imgUrl1" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20210407/f36753181e009.png"/>
@@ -70,7 +70,7 @@ const Security = () => {
         <EditButton type="management" item="landscape_text2" text="텍스트"  />
       </motion.h6>
       <div style={{display:"flex", justifyContent:"center"}}>
-        <motion.img {...initial(0,0,30)} animate={ani4} ref={inViewRef4} src={data.management.landscape_imgUrl2}  alt="이미지2"></motion.img>
+        <motion.img {...initial(0,0,30)} animate={ani4} ref={inViewRef4} src={data.management.landscape_imgUrl2}  alt="동우개발의 조경미화관리"></motion.img>
       </div>
       <div style={{position:"relative"}}>
         <EditButton type="management" item="landscape_imgUrl2" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20210422/cd4ec2f5e5a20.png"/>

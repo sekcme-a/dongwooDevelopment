@@ -70,7 +70,7 @@ const Hrd = () => {
       <motion.h2 {...initial(0,-50,0)} animate={{...start(0.5,0.2)}}>{fetchedData.text1}<EditButton type="hrd" item="text1" text="텍스트" /></motion.h2>
       <motion.div {...initial(0,-50,0)} animate={{...start(0.5,0.4)}} className={styles.border} />
       <motion.h3 {...initial(0,50,0)} animate={{...start(1,1.0)}}>{fetchedData.text2}<EditButton type="hrd" item="text2" text="텍스트" /></motion.h3>
-      <motion.div className={styles.image_container} ref={inViewRef} {...initial(0,0,50)} animate={ani1}><img src={fetchedData.imgUrl} alt="부동산자산관리" />
+      <motion.div className={styles.image_container} ref={inViewRef} {...initial(0,0,50)} animate={ani1}><img src={fetchedData.imgUrl} alt="인사관리" />
         <EditButton type="hrd" item="imgUrl" text="이미지 삽입" mode="image" defaultImg="https://cdn.imweb.me/thumbnail/20210408/ae9d3227282f4.png"/>
       </motion.div>
 

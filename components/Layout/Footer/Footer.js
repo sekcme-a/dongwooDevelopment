@@ -25,7 +25,7 @@ const Footer = () => {
                   />
                   <Link href="/">
                     <a >
-                      <img 
+                      <Image 
                         src={data.footer.footer_logoUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Ffooter%2Ffooter_logoUrl?alt=media&token=3724df96-8253-437c-8753-2fff2f6924f3"} 
                         alt="로고" 
                         width={180}

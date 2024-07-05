@@ -67,7 +67,7 @@ const WhyChooseUsStyle1 = () => {
                 data-aos-duration="500"
                 data-aos-once="true"
               >
-                <img src={data.info.overview_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Foverview_bgUrl?alt=media&token=61ed5a41-6a6f-45c6-bed1-4dcd99f38de7"} 
+                <Image src={data.info.overview_bgUrl ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Finfo%2Foverview_bgUrl?alt=media&token=61ed5a41-6a6f-45c6-bed1-4dcd99f38de7"} 
                 alt="동우개발 오버뷰" 
                   width={0}
                   height={0}

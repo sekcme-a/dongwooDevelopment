@@ -24,7 +24,7 @@ const OurExpertise = () => {
                 data-aos-once="true"
               >
                 {/* 1080*976 */}
-                <img 
+                <Image 
                   src={data.main.aboutUs_img ?? "https://firebasestorage.googleapis.com/v0/b/dongwoo-315ab.appspot.com/o/development%2Fmain%2FaboutUs_img?alt=media&token=b3537b00-4359-44c3-ae7c-f0ffb10ab7da"}
                   alt="about us" 
                   width={500} height={450} objectFit="contain"
@@ -36,18 +36,6 @@ const OurExpertise = () => {
                   defaultImg="/images/expertise/expertise-3.png"
                 />
 
-                {/* <div
-                  className="expertise-shape-2"
-                >
-                  <img
-                    src="/images/expertise/shape-2.png"
-                    alt="image"
-                    data-aos="fade-left"
-                    data-aos-delay="50"
-                    data-aos-duration="500"
-                    data-aos-once="true"
-                  />
-                </div> */}
               </div>
             </div>
 
