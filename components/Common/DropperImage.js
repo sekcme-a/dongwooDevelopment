@@ -141,15 +141,13 @@ function formatBytes(bytes, decimals = 2) {
 
   return (
     <div className={styles.image_container} style={{flexWrap:"wrap"}}>
-      {/* <div className={styles.title_container}>
-        <h1>썸네일 업로드</h1> */}
+
         <div {...getRootProps({ className: 'dropzone' })}>
           <div className={styles.dropzone_container}>
             <input {...getInputProps()} />
-            <h1>이곳으로 이미지 드래그 혹은 </h1><Button >파일 업로드</Button>
+            <p style={{color:"black", fontWeight:"bold", fontSize:"13px"}}>이곳으로 이미지 드래그 혹은 </p><Button >파일 업로드</Button>
           </div>
         </div>
-      {/* </div> */}
       {fileListData.length > 0 && <List>{fileList}</List>}
     </div>
   )

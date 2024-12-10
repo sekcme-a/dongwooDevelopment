@@ -77,6 +77,7 @@ const Post = ({data, type, id}) => {
           </div>
           {data?.files?.length===0 && <p>첨부파일이 없습니다.</p>}
           {data?.files?.map((item, index) => {
+            console.log(item.url)
             return(
               <a key={`${index}_${item}`} href={item.url} target="_blank" rel="noreferrer">
                 <div className={styles.item}>
