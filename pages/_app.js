@@ -27,6 +27,7 @@ import { DataProvider } from "context/data";
 import AuthStateChanged from "components/hooks/AuthStateChanged";
 
 import EditControl from "components/admin/EditControl";
+import { useRouter } from "next/router";
 // import Loader from "components/Common/Loader";
 
 
@@ -34,11 +35,16 @@ function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
     AOS.init();
   }, []);
+
+  const router = useRouter();
+  const baseUrl = "https://www.xn--h49at0mlnhpml.kr/"; 
+  
   return (
     <>
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="robots" content="index,follow"></meta>
+        <link rel="canonical"  href={`${baseUrl}${router.asPath.split("?")[0]}`}></link>
       </Head>
       <UserDataProvider>
         <DataProvider>
