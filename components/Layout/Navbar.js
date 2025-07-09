@@ -1,45 +1,69 @@
-import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "utils/ActiveLink";
+import { NavbarList } from "components/data/navbar";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import EditButton from "components/admin/EditButton";
+import useData from "context/data";
+import Image from "next/image";
 
-const NavbarStyle2 = () => {
-  const [menu, setMenu] = React.useState(true);
+const Navbar = () => {
+  const [collapsed, setCollapsed] = useState(true);
+
+  const { data } = useData();
+
   const toggleNavbar = () => {
-    setMenu(!menu);
+    setCollapsed(!collapsed);
   };
-  React.useEffect(() => {
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elementId = document.getElementById("navbar");
       if (window.scrollY > 170) {
         elementId.classList.add("is-sticky");
       } else {
         elementId.classList.remove("is-sticky");
       }
-    });
-  });
+    };
 
-  const classOne = menu
-    ? "collapse navbar-collapse mean-menu"
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const classOne = collapsed
+    ? "collapse navbar-collapse"
     : "collapse navbar-collapse show";
-  const classTwo = menu
+  const classTwo = collapsed
     ? "navbar-toggler navbar-toggler-right collapsed"
     : "navbar-toggler navbar-toggler-right";
 
   return (
     <>
-      <div id="navbar" className="nbarea fixed-top dev-nav">
-        <div className="mnbar">
-          <div className="container-fluid">
-            <nav className="navbar navbar-expand-lg navbar-light">
+      <div id="navbar" className="dwg-nvb-area dwg-nvb-style2">
+        <div className="dwg-nav">
+          <div className="dwg-con-fluid">
+            <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                 
-                  <Image
+                  <img
                     src="/images/logo.png"
-                    alt="동우개발 로고"
-                    width={180} height={50}
-                    objectFit="contain"
-                    style={{marginLeft: "20px"}}
+                    alt="로고"
+                    className="white-logo"
+                    width={120}
+                    height={40}
+                    // objectFit="contain"
+                  />
+
+                  {/* For mobile device */}
+                  <img
+                    src="/images/logo.png"
+                    alt="로고"
+                    className="logo"
+                    width={120}
+                    height={40}
+                    // objectFit="contain"
                   />
                 </a>
               </Link>
@@ -49,262 +73,133 @@ const NavbarStyle2 = () => {
                 className={classTwo}
                 type="button"
                 data-toggle="collapse"
-                data-target="#navsupcon"
-                aria-controls="navsupcon"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="nav-icbar top-bar"></span>
-                <span className="nav-icbar middle-bar"></span>
-                <span className="nav-icbar bottom-bar"></span>
+                <span className="icon-bar top-bar"></span>
+                <span className="icon-bar middle-bar"></span>
+                <span className="icon-bar bottom-bar"></span>
               </button>
 
-              <div className={classOne} id="navsupcon">
-                <ul className="navbar-nav ms-auto">
-                  <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link">
-                        Home
-                      </a>
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      회사소개 <i className="ri-arrow-down-s-line"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link href="/info/greet" activeClassName="active">
-                          <a className="nav-link">인사말</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/info/overview" activeClassName="active">
-                          <a className="nav-link">{`회사 개요(사훈, 경영이념)`}</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/info/business" activeClassName="active">
-                          <a className="nav-link">경영방침</a>
-                        </Link>
-                      </li>
-                      {/* <li className="nav-item">
-                        <Link href="/info/partner" activeClassName="active">
-                          <a className="nav-link">협력사</a>
-                        </Link>
-                      </li> */}
-                      <li className="nav-item">
-                        <Link href="/info/history" activeClassName="active">
-                          <a className="nav-link">연혁</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/info/map" activeClassName="active">
-                          <a className="nav-link">오시는 길</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      주요사업 <i className="ri-arrow-down-s-line"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link href="/major/management" activeClassName="active">
-                          <a className="nav-link">공동주택의 토탈 관리 서비스</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/major/facilities" activeClassName="active">
-                          <a className="nav-link">오피스텔·상가·기타 업무용 건물의 시설</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/major/asset" activeClassName="active">
-                          <a className="nav-link">자산관리 서비스</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/major/implementation" activeClassName="active">
-                          <a className="nav-link">시행&시공사에 대한 관리부분 컨설팅 서비스</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  {/* 공동주택관리, 빌딩종합관리, 부동산자산관리, 인사관리, 회계관리, 경비보안관리, 조경 · 미화 관리 */}
-                  <li className="nav-item">
-                    <Link href="#" activeClassName="active">
-                      <a className="nav-link">
-                        관리분야 <i className="ri-arrow-down-s-line"></i>
-                      </a>
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link href="/management/housing" activeClassName="active">
-                          <a className="nav-link">공동주택관리</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/management/building" activeClassName="active">
-                          <a className="nav-link">빌딩종합관리</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/management/estate" activeClassName="active">
-                          <a className="nav-link">부동산자산관리</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/management/hrd" activeClassName="active">
-                          <a className="nav-link">인사관리</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/management/financial" activeClassName="active">
-                          <a className="nav-link">회계관리</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/management/security" activeClassName="active">
-                          <a className="nav-link">경비보안관리</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/management/landscape" activeClassName="active">
-                          <a className="nav-link">조경 · 미화 관리</a>
-                        </Link>
-                      </li>
-
-                      {/* <li className="nav-item">
-                        <a href="#" className="nav-link">
-                          User Pages <i className="ri-arrow-right-s-line"></i>
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link href="/login" activeClassName="active">
-                              <a className="nav-link">Login</a>
-                            </Link>
-                          </li>
-                          <li className="nav-item">
-                            <Link href="/register" activeClassName="active">
-                              <a className="nav-link">Register</a>
-                            </Link>
-                          </li>
-                          <li className="nav-item">
-                            <Link
-                              href="/forgot-password"
-                              activeClassName="active"
+              <div className={classOne} id="navbarSupportedContent">
+                <ul className="navbar-nav">
+                  {NavbarList.map((mainItem, index) => {
+                    if (mainItem.child) {
+                      return (
+                        <li className="nav-item" key={index}>
+                          <Link href={mainItem.url}>
+                            <a
+                              className="nav-link"
+                              onClick={(e) => e.preventDefault()}
                             >
-                              <a className="nav-link">Forgot Password</a>
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/terms-of-service" activeClassName="active">
-                          <a className="nav-link">Terms of Service</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/privacy-policy" activeClassName="active">
-                          <a className="nav-link">Privacy Policy</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/coming-soon" activeClassName="active">
-                          <a className="nav-link">Coming Soon</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/404" activeClassName="active">
-                          <a className="nav-link">404 Error Page</a>
-                        </Link>
-                      </li> */}
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      인재 채용 <i className="ri-arrow-down-s-line"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link href="/job/advertisement" activeClassName="active">
-                          <a className="nav-link">채용공고</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/job/application"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">입사지원</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  {/* <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Blog <i className="ri-arrow-down-s-line"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link href="/blog" activeClassName="active">
-                          <a className="nav-link">Blog Grid</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/blog-right-sidebar"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Blog Right Sidebar</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/blog-details" activeClassName="active">
-                          <a className="nav-link">Blog Details</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
-                  <li className="nav-item">
-                    <Link href="https://gw.dwgroup.kr" activeClassName="active">
-                      <a className="nav-link" target="_blank">인트라넷</a>
-                    </Link>
-                  </li>
+                              {mainItem.text}{" "}
+                              <i className="flaticon-down-arrow"></i>
+                            </a>
+                          </Link>
+                          <ul className="dropdown-menu">
+                            {mainItem.child.map((subItem, subIndex) => {
+                              if (subItem.child) {
+                                return (
+                                  <li className="nav-item" key={subIndex}>
+                                    <Link href={subItem.url}>
+                                      <a
+                                        className="nav-link"
+                                        onClick={(e) => e.preventDefault()}
+                                      >
+                                        {subItem.text}
+                                      </a>
+                                    </Link>
+                                    <ul className="dropdown-menu">
+                                      {subItem.child.map(
+                                        (subSubItem, subSubIndex) => (
+                                          <li
+                                            className="nav-item"
+                                            key={subSubIndex}
+                                          >
+                                            <Link
+                                              href={subSubItem.url}
+                                              activeClassName="active"
+                                            >
+                                              <a className="nav-link">
+                                                {subSubItem.text}
+                                              </a>
+                                            </Link>
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  </li>
+                                );
+                              } else {
+                                return (
+                                  <li className="nav-item" key={subIndex}>
+                                    <Link
+                                      href={subItem.url}
+                                      activeClassName="active"
+                                    >
+                                      <a className="nav-link">{subItem.text}</a>
+                                    </Link>
+                                  </li>
+                                );
+                              }
+                            })}
+                          </ul>
+                        </li>
+                      );
+                    } else {
+                      return (
+                        <li className="nav-item" key={index}>
+                          <Link href={mainItem.url} activeClassName="active">
+                            <a className="nav-link">{mainItem.text}</a>
+                          </Link>
+                        </li>
+                      );
+                    }
+                  })}
                 </ul>
-              </div>
 
+                <div className="oth-opt">
+                  <div className="dwg-phone">
+                    <div className="icon">
+                      <i className="flaticon-call"></i>
+                    </div>
+                    문의하기 :
+                    <span className="number">
+                      {data.main.number ?? "02) 976-2200"}
+                      <EditButton type="main" item="number" text="전화번호" />
+                    </span>
+                  </div>
 
-              {/* <div className="others-options d-flex align-items-center">
-                <div className="option-item">
-                  <form className="search-box">
-                    <input
-                      type="text"
-                      className="input-search"
-                      placeholder="Search..."
-                    />
-                    <button type="submit">
-                      <i className="ri-search-line"></i>
-                    </button>
-                  </form>
-                </div>
- 
-                <div className="option-item">
-                  <Link href="/contact">
-                    <a className="dev_mainbutton">
-                      Contact Us
+                  <EditButton
+                    type="main"
+                    item="youtubeUrl"
+                    text="전체 URL (http나 https을 포함해 적어주세요."
+                  />
+                  <Link href={data.main.youtubeUrl ?? "/"}>
+                    <a
+                      className="dwg-single-btn"
+                      style={{ color: "white" }}
+                      target="_blank"
+                    >
+                      <>
+                        <YouTubeIcon
+                          sx={{ mr: "8px" }}
+                          style={{ position: "relative" }}
+                        />
+                        {data.main.youtubeTitle}
+                        <EditButton
+                          type="main"
+                          item="youtubeTitle"
+                          text="문구"
+                        />
+                      </>
+                      <span></span>
                     </a>
                   </Link>
                 </div>
-              </div> */}
+              </div>
             </nav>
           </div>
         </div>
@@ -313,4 +208,4 @@ const NavbarStyle2 = () => {
   );
 };
 
-export default NavbarStyle2;
+export default Navbar;

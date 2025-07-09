@@ -9,22 +9,21 @@ import useData from "context/data";
 
 import HeadMeta from "components/HeadMeta";
 import PopUp from "components/PopUp";
+import RecentPost from "components/RecentPost";
+import Achievements from "components/Achievements";
 
 export default function Index3() {
+  const { data, fetch_data } = useData();
 
-  const {data, fetch_data} = useData()
-
-  useEffect(()=>{
-      if(!data.main.fetched) fetch_data("main")
-  },[])
-
+  useEffect(() => {
+    if (!data.main.fetched) fetch_data("main");
+  }, []);
 
   return (
     <>
-
       <HeadMeta
         title="동우개발"
-        description= "(주)동우개발은 공동주택을 전문으로 하는 관리회사입니다."
+        description="(주)동우개발은 공동주택을 전문으로 하는 관리회사입니다."
         url="https://xn--h49at0mlnhpml.kr"
       />
 
@@ -34,14 +33,15 @@ export default function Index3() {
 
       <MainBanner />
 
+      <RecentPost />
+
+      <Achievements />
+
       <OurExpertise />
 
       <OurServices />
 
-
       <ScrollCount />
-
-     
 
       {/* <WhyChooseUsStyle2 /> */}
 
