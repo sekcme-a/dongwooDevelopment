@@ -36,7 +36,13 @@ const Article = () => {
   return (
     <>
       <HeadMeta
-        title="동행소식 - 동우그룹"
+        title={`${
+          type === "announcement"
+            ? "공지사항"
+            : type === "news"
+            ? "동우뉴스"
+            : type === "achievements" && "사업실적"
+        } - 동우개발`}
         description="동우그룹의 동행소식을 확인하세요."
         url={`https://xn--2i0bm5iryeh7q.kr/info/article/${type}`}
       />
