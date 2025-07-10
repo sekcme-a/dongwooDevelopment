@@ -5,7 +5,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import EditButton from "components/admin/EditButton";
 import useData from "context/data";
 import Image from "next/image";
-
+import LanguageIcon from "@mui/icons-material/Language";
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -184,7 +184,7 @@ const Navbar = () => {
                       target="_blank"
                     >
                       <>
-                        <YouTubeIcon
+                        <LanguageIcon
                           sx={{ mr: "8px" }}
                           style={{ position: "relative" }}
                         />
