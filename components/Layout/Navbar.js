@@ -48,7 +48,7 @@ const Navbar = () => {
               <Link href="/">
                 <a className="navbar-brand">
                   <img
-                    src="/images/logo.png"
+                    src="/images/logo_white.png"
                     alt="로고"
                     className="white-logo"
                     width={120}
